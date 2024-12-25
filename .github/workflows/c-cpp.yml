@@ -1,4 +1,4 @@
-name: CMake Build and Test
+name: CMake on multiple platforms
 
 on:
   push:
@@ -22,7 +22,11 @@ jobs:
             cpp_compiler: cl
           - os: ubuntu-latest
             c_compiler: gcc
-            cpp_compiler: g++
+            cpp### Error Explanation:
+The job logs indicate the following errors:
+1. **Deprecated `add-path` Command**: 
+   - The error message states, "The `add-path` command is disabled. Please upgrade to using Environment Files or opt into unsecure command execution by setting the `ACTIONS_ALLOW_UNSECURE_COMMANDS` environment variable to `true`."
+   - Source: [GitHub Changelog](_compiler: g++
           - os: ubuntu-latest
             c_compiler: clang
             cpp_compiler: clang++
@@ -35,21 +39,56 @@ jobs:
             c_compiler: cl
 
     steps:
-    - uses: actions/checkout@v4
+   https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/).
+
+2. **Deprecated `save-state` Command**:
+   - Multiple warnings indicate that the `save-state` command is deprecated and will be disabled soon. 
+   - Source: [GitHub Changelog - uses: actions/checkout@v4
 
     - name: Set up CMake
       uses: lukka/get-cmake@v2
+      with:
+](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/).
+
+### Fix:
+Update the workflow file to use Environment        cmake-version: '3.17.1'
 
     - name: Set up Compiler
       if: matrix.os == 'ubuntu-latest'
       run: sudo apt-get install -y gcc g++ clang
 
     - name: Configure CMake
-      run: cmake -B build -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }} -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} -DCMAKE_BUILD_TYPE=${{ matrix.build_type }} -S .
+      run: cmake -B build -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }} -DCMAKE_C_COMPILER=${{ matrix.c_compiler }} -DCMAKE_BUILD Files instead of deprecated commands.
+
+#### Updated Workflow File:
+```yaml
+name: CMake on multiple platforms
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu_TYPE=${{ matrix.build_type }} -S .
 
     - name: Build
       run: cmake --build build --config ${{ matrix.build_type }}
 
     - name: Test
-      working-directory: ./build
+      working-directory-latest, windows-latest]
+        build_type: [Release]
+        c_compiler: [gcc, clang, cl]
+        include:
+          - os: windows-latest
+            c_compiler: cl
+            cpp_compiler: cl
+          -: ./build
       run: ctest --output-on-failure
