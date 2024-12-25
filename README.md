@@ -49,10 +49,6 @@ This repository contains my college DSA lab programs from Semester 3. Below is t
 
 ---
 
-## About Me
-
-Hi! I'm **Umesh Patel**, a passionate learner and aspiring developer. Currently, I am pursuing my engineering at **Oriental College of Technology, Bhopal**. I have a strong interest in **Data Structures and Algorithms**, **Machine Learning**, and **Future Technology Research**.
-
 
 ### Connect with Me:
 - **GitHub**: [github.com/Umesh.Code1](https://github.com/UmeshCode1)
