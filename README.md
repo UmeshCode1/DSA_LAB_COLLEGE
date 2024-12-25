@@ -44,7 +44,7 @@ This repository contains my college DSA lab programs from Semester 3. Below is t
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone <https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git>
 
 
 ---
