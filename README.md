@@ -156,12 +156,6 @@ int main()
 
 
 ---
-<h2 align="center">PROGRAM 11</h2>
-
-
----
-<h2 align="center">PROGRAM 12</h2>
-
 
 ---
 
