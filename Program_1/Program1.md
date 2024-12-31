@@ -27,4 +27,4 @@ int main()
 <h1> Output image</h1>
 
 
-![My Image]()
+![image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/01a6763714c483190c5be88793fad6adedf5f20f/Program_1/Screenshot%202024-12-31%20095542.png)
