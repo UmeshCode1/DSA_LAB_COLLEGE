@@ -1,1 +1,9 @@
-{ "files.associations": { "iostream": "cpp" }, "animations.Tabs": "Slide", "animations.Scrolling": "Slide", "animations.Command-Palette": "Slide", "animations.Active": "Indent" } 
+{
+  "files.associations": {
+    "iostream": "cpp"
+  },
+  "animations.Tabs": "Slide",
+  "animations.Scrolling": "Slide",
+  "animations.Command-Palette": "Slide",
+  "animations.Active": "Indent"
+}
