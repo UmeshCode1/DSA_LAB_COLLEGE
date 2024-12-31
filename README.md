@@ -45,7 +45,9 @@ This repository contains my college DSA lab programs from Semester 3. Below is t
 _"Learning never stops, and neither does coding."_ 😊
 
 ---
-<h1> Here is the codes and output preview </h1>
+<div style="text-align: center;">
+  <h2>Program 9</h2>
+</div>
 
 ---
 <h2> Program 9</h2>
