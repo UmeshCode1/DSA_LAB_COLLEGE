@@ -83,9 +83,7 @@ int main()
 ![image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/01a6763714c483190c5be88793fad6adedf5f20f/Program_1/Screenshot%202024-12-31%20095542.png)
 
 ---
-
 <h2 align="center">PROGRAM 2</h2>
-
 
 ```cpp
 
@@ -127,6 +125,7 @@ int main()
 <h2 align="center">PROGRAM 3</h2>
 
 ```CPP
+
 // Program to read two 3x3 matrices and add them.
 
 #include <iostream>
@@ -176,40 +175,9 @@ return 0;
 }
 
 ```
-<h3 align="center">OUTPUT </h3>
+<h2 align="center">OUTPUT </h2>
 
 ![image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/01d2b46b353c59e37cff76e59b2120fa7d3a1bac/Program_3/Screenshot%202024-12-31%20100412.png)
-
----
-
-<h2 align="center">PROGRAM 4</h2>
-
-
----
-<h2 align="center">PROGRAM 5</h2>
-
-
----
-<h2 align="center">PROGRAM 6</h2>
-
-
----
-<h2 align="center">PROGRAM 7</h2>
-
-
----
-<h2 align="center">PROGRAM 8</h2>
-
-
----
-<h2 align="center">PROGRAM 9</h2>
-
-
----
-<h2 align="center">PROGRAM 10</h2>
-
-
----
 
 ---
 
