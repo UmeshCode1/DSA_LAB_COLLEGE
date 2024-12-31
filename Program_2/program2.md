@@ -1,4 +1,4 @@
-```cpp
+```CPP
 
 // Program to find highest and lowest element in an array.
 

@@ -1,4 +1,4 @@
-```
+```CPP
 // Program to read two 3x3 matrices and add them.
 
 #include <iostream>

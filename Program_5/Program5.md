@@ -1,4 +1,4 @@
-```cpp
+```CPP
 
 // Program to generate Fibonacci series using recursion.
 

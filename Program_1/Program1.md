@@ -1,4 +1,4 @@
-```cpp
+```CPP
 
 // Program to input marks of 5 subjects and print the total and percentage using arrays.
 
