@@ -74,6 +74,16 @@
             text-align: center;
             font-size: 18px;
         }
+        .toggle-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
@@ -159,7 +169,7 @@
 
     <hr>
 
-    <h1>PROGRAMS CODE AND OUTPUT PREVIEW</h2>
+    <h1>PROGRAMS CODE AND OUTPUT PREVIEW</h1>
 
     <hr>
 
@@ -252,5 +262,20 @@
     <img src="Program_10/Screenshot%202024-12-31%20120908.png" alt="Program 10 Output">
 
     <hr>
+
+    <button class="toggle-button" onclick="toggleVisibility()">Toggle Program Descriptions</button>
+
+    <script>
+        function toggleVisibility() {
+            const descriptions = document.querySelectorAll('td:nth-child(2)');
+            descriptions.forEach(desc => {
+                if (desc.style.display === 'none') {
+                    desc.style.display = 'table-cell';
+                } else {
+                    desc.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
