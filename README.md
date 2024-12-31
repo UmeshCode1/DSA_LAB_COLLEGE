@@ -46,4 +46,4 @@ _"Learning never stops, and neither does coding."_ 😊
 
 ---
 
-<h1 align="centre">PROGRAMS CODE AND OUTPUT PREVIEW</h1>
+<h1 align="center">PROGRAMS CODE AND OUTPUT PREVIEW</h1>
