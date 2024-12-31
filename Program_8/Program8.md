@@ -117,4 +117,4 @@ int main() {
 <h1> Output image</h1>
 
 
-![My Image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/1100d2859a580e772c0840158791d0263b451565/Program_8/Program8.md#L120)
+![Output Image ](U:\DSA_LAB_COLLEGE\Program_8\Screenshot 2024-12-31 120605.png)
