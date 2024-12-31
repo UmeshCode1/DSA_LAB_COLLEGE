@@ -125,3 +125,43 @@ int main()
 
 ---
 <h2 align="center">PROGRAM 3</h2>
+
+
+---
+<h2 align="center">PROGRAM 4</h2>
+
+
+---
+<h2 align="center">PROGRAM 5</h2>
+
+
+---
+<h2 align="center">PROGRAM 6</h2>
+
+
+---
+<h2 align="center">PROGRAM 7</h2>
+
+
+---
+<h2 align="center">PROGRAM 8</h2>
+
+
+---
+<h2 align="center">PROGRAM 9</h2>
+
+
+---
+<h2 align="center">PROGRAM 10</h2>
+
+
+---
+<h2 align="center">PROGRAM 11</h2>
+
+
+---
+<h2 align="center">PROGRAM 12</h2>
+
+
+---
+
