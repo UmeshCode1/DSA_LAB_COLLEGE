@@ -101,4 +101,8 @@ int main() {
 }
 
 ```
-![output image](Program_7\Screenshot 2024-12-31 120332.png)
+
+
+
+
+![output image](Program_7/Screenshot%202024-12-31%20120332.png)
