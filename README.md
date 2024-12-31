@@ -456,7 +456,7 @@ int main() {
 }
 
 ```
-<h3>Output Image</h3>
+<h2 align="center">OUTPUT</h2>
 
 ![output image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/2c765e870a10b85a37d4ad5f39f561ea1366edbe/Program_6/Screenshot%202024-12-31%20115625.png)
 ---
