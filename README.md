@@ -770,6 +770,6 @@ int main() {
 ```
 <h2 align="center">OUTPUT</h2>
 
-![Screenshot](../Program_8/Screenshot%202024-12-31%20120605.png)
+![Screenshot](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/3a28eee8128c56a363b94750520045f6a9b45a5b/Program_9/Screenshot%202024-12-31%20102845.png)
 
 ---
