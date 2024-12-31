@@ -933,19 +933,5 @@
 
     <hr>
 
-    <button class="toggle-button" onclick="toggleVisibility()">Toggle Program Descriptions</button>
-
-    <script>
-        function toggleVisibility() {
-            const descriptions = document.querySelectorAll('td:nth-child(2)');
-            descriptions.forEach(desc => {
-                if (desc.style.display === 'none') {
-                    desc.style.display = 'table-cell';
-                } else {
-                    desc.style.display = 'none';
-                }
-            });
-        }
-    </script>
 </body>
 </html>
