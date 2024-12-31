@@ -686,9 +686,8 @@ int main() {
 }
 
 ```  
-
-
+<h2 align="center">OUTPUT</h2>
 
 ![Screenshot](../Program_8/Screenshot%202024-12-31%20120605.png)
 
-
+---
