@@ -346,6 +346,11 @@ int main()
         cout << fibonacci(i) << " ";
     return 0;
 }
+```
+<h2 align="center">OUTPUT</h2>
 
+![output image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/d3cb3ee30d1b1b73eb34818303ccefb00749b8c1/Program_5/image.png)
+
+---
 
 
