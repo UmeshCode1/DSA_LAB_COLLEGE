@@ -105,4 +105,4 @@ int main() {
 
 <h1> Output image</h1>
 
-![output image](Program_7/Screenshot%202024-12-31%20120332.png)
+![output image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/35d6fa973b7bdda926ed0e226c52c6c25f302ff1/Program_7/Screenshot%202024-12-31%20120332.png)
