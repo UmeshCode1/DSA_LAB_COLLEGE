@@ -110,8 +110,8 @@ int main() {
                 cout << "Invalid choice\n";
         }
     }
+    return 0;
 }
-
 
 ```  
 <h1> Output image</h1>
