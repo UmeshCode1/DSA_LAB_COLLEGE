@@ -117,4 +117,4 @@ int main() {
 <h1> Output image</h1>
 
 
-![Output Image ](U:\DSA_LAB_COLLEGE\Program_8\Screenshot 2024-12-31 120605.png)
+![Output Image]()
