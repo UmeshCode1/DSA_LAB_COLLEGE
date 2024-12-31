@@ -76,4 +76,5 @@ int main() {
 <h1> Output image</h1>
 
 
-![Screenshot](../Program_8/Screenshot%202024-12-31%20120605.png)
+
+![Screenshot](Program_9/Screenshot%202024-12-31%20102845.png)
