@@ -125,7 +125,8 @@ int main()
 
 ---
 <h2 align="center">PROGRAM 3</h2>
-```
+
+```CPP
 // Program to read two 3x3 matrices and add them.
 
 #include <iostream>
@@ -179,6 +180,7 @@ return 0;
 
 ![image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/01d2b46b353c59e37cff76e59b2120fa7d3a1bac/Program_3/Screenshot%202024-12-31%20100412.png)
 ---
+
 <h2 align="center">PROGRAM 4</h2>
 
 
