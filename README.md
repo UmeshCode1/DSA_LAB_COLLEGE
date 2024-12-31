@@ -49,7 +49,7 @@ _"Learning never stops, and neither does coding."_ 😊
 <h1 align="center">PROGRAMS CODE AND OUTPUT PREVIEW</h1>
 
 ---
-<h2 align="center">PROGRAMS CODE AND OUTPUT PREVIEW</h2>
+<h2 align="center">PROGRAM 1</h2>
 
 ```cpp
 
@@ -77,8 +77,7 @@ int main()
 
 
 ```
---
-<h2 align="center"> Output image</h2>
+<h2 align="center"> OUTPUT</h2>
 
 
 ![image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/01a6763714c483190c5be88793fad6adedf5f20f/Program_1/Screenshot%202024-12-31%20095542.png)
@@ -120,12 +119,9 @@ int main()
 }
 
 ```
-
---
-
-<h2 align="center">output image </h2>
+<h2 align="center">OUTPUT </h2>
 
 ![image ](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/708cc5d24dfa5e1d0ad081cfa7e76d7e88ed8a49/Program_2/Screenshot%202024-12-31%20095915.png)
 
 ---
-<h2>
+<h2 align="center">PROGRAM 3</h2>
