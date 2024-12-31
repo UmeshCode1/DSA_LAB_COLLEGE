@@ -436,7 +436,31 @@
 
     <h2>PROGRAM 5</h2>
     <pre><code>
-    Program_5/Program5.cpp
+        // Program to generate Fibonacci series using recursion.
+
+        #include <iostream>
+        using namespace std;
+        int fibonacci(int n)
+        {
+            if(n == 0)
+                return 0;
+            else if(n == 1)
+                return 1;
+            else
+                return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+        int main()
+        {
+            int n;
+            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
+            cout << "Enter the number of terms in the Fibonacci series: ";
+            cin >> n;
+            cout << "The Fibonacci series is: ";
+            for(int i = 0; i < n; i++)
+                cout << fibonacci(i) << " ";
+            return 0;
+        }
+        
     </code></pre>
     <h2>OUTPUT</h2>
     <img src="Program_5/image.png" alt="Program 5 Output">
@@ -445,7 +469,104 @@
 
     <h2>PROGRAM 6</h2>
     <pre><code>
-    // Code for Program 6
+        // Program to create a stack and implement push and pop operations on it.
+
+        #include <iostream>
+        
+        using namespace std;
+        
+        const int MAX_SIZE = 100;
+        
+        class Stack {
+        private:
+            int arr[MAX_SIZE];
+            int top;
+        
+        public:
+            Stack() : top(-1) {}
+        
+            bool isEmpty() {
+                return (top == -1);
+            }
+        
+            bool isFull() {
+                return (top == MAX_SIZE - 1);
+            }
+        
+            void push(int data) {
+                if (isFull()) {
+                    cout << "Stack Overflow" << endl;
+                    return;
+                }
+                top++;
+                arr[top] = data;
+            }
+        
+            int pop() {
+                if (isEmpty()) {
+                    cout << "Stack Underflow" << endl;
+                    return -1; // Return an error value
+                }
+                int data = arr[top];
+                top--;
+                return data;
+            }
+        
+            void display() {
+                if (isEmpty()) {
+                    cout << "Stack is empty" << endl;
+                } else {
+                    cout << "Stack elements:" << endl;
+                    for (int i = top; i >= 0; i--) {
+                        cout << arr[i] << " ";
+                    }
+                    cout << endl;
+                }
+            }
+        };
+        
+        int main() {
+            Stack stack;
+            int choice, data;
+        
+            cout << "Name: Umesh Patel\n";  
+            cout << "Enrollment No: 0126AL231140\n";
+        
+        
+            while (true) {
+                cout << "\n1. Push\n";
+                cout << "2. Pop\n";
+                cout << "3. Display\n";
+                cout << "4. Exit\n";
+                cout << "Enter your choice: ";
+                cin >> choice;
+        
+                switch (choice) {
+                    case 1:
+                        cout << "Enter data to push: ";
+                        cin >> data;
+                        stack.push(data);
+                        break;
+        
+                    case 2:
+                        data = stack.pop();
+                        if (data != -1) { // Check for error
+                            cout << "Popped element: " << data << endl;
+                        }
+                        break;
+        
+                    case 3:
+                        stack.display();
+                        break;
+        
+                    case 4:
+                        return 0;
+        
+                    default:
+                        cout << "Invalid choice" << endl;
+                }
+            }
+        }
     </code></pre>
     <h2>OUTPUT</h2>
     <img src="Program_6/Screenshot%202024-12-31%20115625.png" alt="Program 6 Output">
@@ -454,7 +575,105 @@
 
     <h2>PROGRAM 7</h2>
     <pre><code>
-    // Code for Program 7
+        // Program to create a queue and implement enqueue and dequeue operations on it.
+
+        #include <stdio.h>
+        #define MAX 10 // Maximum size of the queue
+        
+        int queue[MAX];
+        int front = -1, rear = -1;
+        
+        // Function to check if the queue is empty
+        int isEmpty() {
+            return (front == -1);
+        }
+        
+        // Function to check if the queue is full
+        int isFull() {
+            return (rear == MAX - 1);
+        }
+        
+        // Function to insert an element into the queue
+        void enqueue(int item) {
+            if (isFull()) {
+                printf("Queue Overflow\n");
+            } else {
+                if (isEmpty()) {
+                    front = 0;
+                }
+                rear = rear + 1;
+                queue[rear] = item;
+            }
+        }
+        
+        // Function to delete an element from the queue
+        int dequeue() {
+            int item;
+            if (isEmpty()) {
+                printf("Queue Underflow\n");
+                return -1; // Return an error value
+            } else {
+                item = queue[front];
+                if (front == rear) {
+                    front = -1;
+                    rear = -1;
+                } else {
+                    front = front + 1;
+                }
+                return item;
+            }
+        }
+        
+        int main() {
+            int choice, item;
+        
+            printf("Name: Umesh Patel\n");
+            printf("Enrollment No: 0126AL231140\n");
+        
+            while (1) {
+                printf("\n1. Enqueue\n");
+                printf("2. Dequeue\n");
+                printf("3. Display\n");
+                printf("4. Exit\n");
+                printf("Enter your choice: ");
+                scanf("%d", &choice);
+        
+                switch (choice) {
+                    case 1:
+                        printf("Enter the element to be inserted: ");
+                        scanf("%d", &item);
+                        enqueue(item);
+                        break;
+        
+                    case 2:
+                        item = dequeue();
+                        if (item != -1) {
+                            printf("Dequeued element: %d\n", item);
+                        }
+                        break;
+        
+                    case 3:
+                        if (isEmpty()) {
+                            printf("Queue is empty\n");
+                        } else {
+                            printf("Queue elements:\n");
+                            for (int i = front; i <= rear; i++) {
+                                printf("%d ", queue[i]);
+                            }
+                            printf("\n");
+                        }
+                        break;
+        
+                    case 4:
+                        return 0;
+        
+                    default:
+                        printf("Invalid choice\n");
+                }
+            }
+        
+            return 0;
+        }
     </code></pre>
     <h2>OUTPUT</h2>
     <img src="Program_7/Screenshot%202024-12-31%20120332.png" alt="Program 7 Output">
@@ -463,7 +682,118 @@
 
     <h2>PROGRAM 8</h2>
     <pre><code>
-    // Code for Program 8
+        // Program to create a circular queue and implement insertion and deletion operations on it.
+
+        #include <iostream>
+        using namespace std;
+        
+        #define MAX_SIZE 5 // Define the maximum size of the circular queue
+        
+        class CircularQueue {
+        private:
+            int front, rear;
+            int arr[MAX_SIZE];
+        
+        public:
+            CircularQueue() {
+                front = -1;
+                rear = -1;
+            }
+        
+            bool isEmpty() {
+                return (front == -1);
+            }
+        
+            bool isFull() {
+                return ((front == 0 && rear == MAX_SIZE - 1) || front == rear + 1);
+            }
+        
+            void enqueue(int data) {
+                if (isFull()) {
+                    cout << "Queue is full\n";
+                } else {
+                    if (isEmpty()) {
+                        front = rear = 0;
+                    } else {
+                        rear = (rear + 1) % MAX_SIZE;
+                    }
+                    arr[rear] = data;
+                }
+            }
+        
+            int dequeue() {
+                if (isEmpty()) {
+                    cout << "Queue is empty\n";
+                    return -1;
+                } else {
+                    int data = arr[front];
+                    if (front == rear) {
+                        front = rear = -1;
+                    } else {
+                        front = (front + 1) % MAX_SIZE;
+                    }
+                    return data;
+                }
+            }
+        
+            void display() {
+                if (isEmpty()) {
+                    cout << "Queue is empty\n";
+                } else {
+                    cout << "Queue elements are: ";
+                    int i = front;
+                    while (true) {
+                        cout << arr[i] << " ";
+                        if (i == rear) break;
+                        i = (i + 1) % MAX_SIZE;
+                    }
+                    cout << endl;
+                }
+            }
+        };
+        
+        int main() {
+            CircularQueue cq;
+            int choice, data;
+        
+            cout << "Name: Umesh Patel\n";
+            cout << "Enrollment No: 0126AL231140\n";
+        
+            while (true) {
+                cout << "\n1. Enqueue\n";
+                cout << "2. Dequeue\n";
+                cout << "3. Display\n";
+                cout << "4. Exit\n";
+                cout << "Enter your choice: ";
+                cin >> choice;
+        
+                switch (choice) {
+                    case 1:
+                        cout << "Enter data to enqueue: ";
+                        cin >> data;
+                        cq.enqueue(data);
+                        break;
+        
+                    case 2:
+                        data = cq.dequeue();
+                        if (data != -1) {
+                            cout << "Dequeued element: " << data << endl;
+                        }
+                        break;
+        
+                    case 3:
+                        cq.display();
+                        break;
+        
+                    case 4:
+                        return 0;
+        
+                    default:
+                        cout << "Invalid choice\n";
+                }
+            }
+        }
+        
     </code></pre>
     <h2>OUTPUT</h2>
     <img src="Program_8/Screenshot%202024-12-31%20120605.png" alt="Program 8 Output">
@@ -472,7 +802,78 @@
 
     <h2>PROGRAM 9</h2>
     <pre><code>
-    // Code for Program 9
+        // Program to traverse a binary tree in pre-order, in-order and post-order.
+
+        #include <iostream>
+        using namespace std;
+        
+        struct Node {
+            char data;
+            Node* left;
+            Node* right;
+        };
+        
+        Node* newNode(char data) {
+            Node* node = new Node();
+            node->data = data;
+            node->left = nullptr;
+            node->right = nullptr;
+            return node;
+        }
+        
+        // In-order traversal
+        void inorder(Node* root) {
+            if (root != nullptr) {
+                inorder(root->left);
+                cout << root->data << " ";
+                inorder(root->right);
+            }
+        }
+        
+        // Pre-order traversal
+        void preorder(Node* root) {
+            if (root != nullptr) {
+                cout << root->data << " ";
+                preorder(root->left);
+                preorder(root->right);
+            }
+        }
+        
+        // Post-order traversal
+        void postorder(Node* root) {
+            if (root != nullptr) {
+                postorder(root->left);
+                postorder(root->right);
+                cout << root->data << " ";
+            }
+        }
+        
+        int main() {
+            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
+        
+            Node* root = newNode('A');
+            root->left = newNode('B');
+            root->right = newNode('C');
+            root->left->left = newNode('D');
+            root->left->right = newNode('E');
+           // root->right->left = newNode('F');
+            root->left->left->left = newNode('G');
+            root->right->right = newNode('F');
+        
+            cout << "In-order traversal: ";
+            inorder(root);
+            cout << endl;
+        
+            cout << "Pre-order traversal: ";
+            preorder(root);
+            cout << endl;
+        
+            cout << "Post-order traversal: ";
+            postorder(root);
+            cout << endl;
+        
+            return 0;
+        }
     </code></pre>
     <h2>OUTPUT</h2>
     <img src="Program_9/Screenshot%202024-12-31%20102845.png" alt="Program 9 Output">
@@ -481,7 +882,51 @@
 
     <h2>PROGRAM 10</h2>
     <pre><code>
-    // Code for Program 10
+        // Program to implement binary search .
+
+        #include <iostream>
+        
+        using namespace std;
+        
+        int binarySearch(int arr[], int low, int high, int target) {
+            while (low <= high) {
+                int mid = low + (high - low) / 2;
+        
+                if (arr[mid] == target) {
+                    return mid; // Target found
+                }
+        
+                if (arr[mid] < target) {
+                    low = mid + 1; // Search in the right half
+                } else {
+                    high = mid - 1; // Search in the left half
+                }
+            }
+        
+            return -1; // Target not found
+        }
+        
+        int main() {
+            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
+        
+            int arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
+            int n = sizeof(arr) / sizeof(arr[0]);
+            int target = 23;
+        
+            int result = binarySearch(arr, 0, n - 1, target);
+            if (result != -1) {
+                cout << "Elements are: ";
+                for (int i = 0; i < n; i++) {
+                    cout << arr[i] << " ";
+                }
+                cout << endl;
+                cout << "Element found at index " << result << endl;
+            } else {
+                cout << "Element not found in the array" << endl;
+            }
+        
+            return 0;
+        }
     </code></pre>
     <h2>OUTPUT</h2>
     <img src="Program_10/Screenshot%202024-12-31%20120908.png" alt="Program 10 Output">
