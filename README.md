@@ -319,6 +319,33 @@ int main() {
 ![Output image](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/874e49b3b25390b800800cf9b02e820818a67539/Program_4/Screenshot%202024-12-31%20100444.png)
 
 ---
- 
+<h2 align="center">PROGRAM 5</h2>
+
+```cpp
+// Program to generate Fibonacci series using recursion.
+
+#include <iostream>
+using namespace std;
+int fibonacci(int n)
+{
+    if(n == 0)
+        return 0;
+    else if(n == 1)
+        return 1;
+    else
+        return fibonacci(n - 1) + fibonacci(n - 2);
+}
+int main()
+{
+    int n;
+    cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
+    cout << "Enter the number of terms in the Fibonacci series: ";
+    cin >> n;
+    cout << "The Fibonacci series is: ";
+    for(int i = 0; i < n; i++)
+        cout << fibonacci(i) << " ";
+    return 0;
+}
+
 
 
