@@ -103,6 +103,6 @@ int main() {
 ```
 
 
-
+<h1> Output image</h1>
 
 ![output image](Program_7/Screenshot%202024-12-31%20120332.png)
