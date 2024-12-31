@@ -72,9 +72,8 @@ int main() {
     return 0;
 }
 
-```  
+```
 <h1> Output image</h1>
-
 
 
 ![Screenshot](Program_9/Screenshot%202024-12-31%20102845.png)
