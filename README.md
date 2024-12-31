@@ -688,6 +688,6 @@ int main() {
 ```  
 <h2 align="center">OUTPUT</h2>
 
-![Screenshot](../Program_8/Screenshot%202024-12-31%20120605.png)
+![Screenshot](https://github.com/UmeshCode1/DSA_LAB_COLLEGE/blob/b5723592af884cc353d874ff1a9ecf2ca9a39144/Program_8/Screenshot%202024-12-31%20120605.png)
 
 ---
