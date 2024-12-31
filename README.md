@@ -354,7 +354,8 @@ int main()
 ---
 <h2 align="center">PROGRAM 6</h2>
 
-'''cpp
+```CPP
+
  // Program to create a stack and implement push and pop operations on it.
 
 #include <iostream>
