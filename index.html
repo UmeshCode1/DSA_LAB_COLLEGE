@@ -117,6 +117,19 @@
             50% { opacity: 1; }
             100% { opacity: 0; }
         }
+        .fade-in-bottom {
+            animation: fadeInBottom 2s ease-in-out;
+        }
+        @keyframes fadeInBottom {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -989,11 +1002,10 @@
     <h2>OUTPUT</h2>
     <img src="Program_10/Screenshot%202024-12-31%20120908.png" alt="Program 10 Output">
 
+   
     <hr>
-
-
-    <h1 class="highlight" class="animated-text"><i>"Thank You For Visit."</i> 😊</h1>
-
+    <h1 class="highlight fade-in-bottom"><i>"Thank You For Visit."</i> 😊</h1>
     <hr>
+    
 </body>
 </html>
