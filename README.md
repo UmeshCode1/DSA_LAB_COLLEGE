@@ -22,6 +22,11 @@ This repository contains my college DSA lab programs from Semester 3. Below is t
 | 12 | Program to implement a graph and traverse it using:<br>    Breadth First Search (BFS) <br>   Depth First Search (DFS) |
 
 ---
+## GitHub Pages
+
+The repository is also published at [GitHub Pages](https://umeshcode1.github.io/DSA_LAB_COLLEGE/). Visit the page to see the programs in action.
+
+---
 
 ## How to Use
 
