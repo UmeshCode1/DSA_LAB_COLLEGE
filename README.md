@@ -25,8 +25,10 @@ This repository contains my college DSA lab programs from Semester 3. Below is t
 ## GitHub Pages
 
 The repository is also published at [GitHub Pages](https://umeshcode1.github.io/DSA_LAB_COLLEGE/). Visit the page to see the programs in action.
+--
+ website link:
    ```bash
-   Website Page <https://umeshcode1.github.io/DSA_LAB_COLLEGE/>
+   https://umeshcode1.github.io/DSA_LAB_COLLEGE
    ```
 ---
 
