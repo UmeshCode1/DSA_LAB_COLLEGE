@@ -5,6 +5,7 @@
 
 int queue[MAX];
 int front = -1, rear = -1;
+
 // Function to check if the queue is empty
 int isEmpty() {
     return (front == -1);
@@ -96,63 +97,3 @@ int main() {
 
     return 0;
 }
-
-
-
-
-// Output:
-
-// Name: Umesh Patel
-// Enrollment No: 0126AL231140
-
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice: 1
-// Enter the element to be inserted: 10
-
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice: 1
-// Enter the element to be inserted: 20
-
-// 1. Enqueue
-// 2. Dequeue 
-// 3. Display
-// 4. Exit
-// Enter your choice: 1
-// Enter the element to be inserted: 30
-
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice: 3
-// Queue elements:
-// 10 20 30
-
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice: 2
-// Dequeued element: 10
-
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice: 3
-// Queue elements:
-// 20 30
-
-// 1. Enqueue
-// 2. Dequeue
-// 3. Display
-// 4. Exit
-// Enter your choice: 4
-
-// In this program, we have implemented a queue using an array. The queue has a fixed size of 10 elements. The functions isEmpty() and isFull() are used to check if the queue is empty or full, respectively. The enqueue() function is used to insert an element into the queue, and the dequeue() function is used to delete an element from the queue. The main function provides a menu to the user to enqueue, dequeue, display the elements of the queue, or exit the program. The program continues to run until the user chooses to exit.

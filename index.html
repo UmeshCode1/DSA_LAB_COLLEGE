@@ -152,6 +152,71 @@
             from, to { border-color: transparent; }
             50% { border-color: orange; }
         }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+        }
+        .program-preview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .program {
+            background-color: #4CAF50;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 30%;
+        }
+        .program:hover {
+            background-color: #45a049;
+        }
+        .thank-you {
+            text-align: center;
+            margin: 20px;
+        }
+        .thank-you-animation {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -232,803 +297,64 @@
 
     <hr>
 
-   <div class="center">
-    <h2>Visit the Repository on GitHub & Gitingest</h2>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git">UmeshCode1/DSA_LAB_COLLEGE</a></p>
-    <p><i class="fas fa-link"></i> <a href="https://gitingest.com/UmeshCode1/DSA_LAB_COLLEGE">Visit On GitIngest</a></p>
-</div>
+    <div class="card">
+        <h2>Repository Programs</h2>
+        <div class="program-preview">
+            <div class="program" onclick="showModal('Program1/method1.py', 'output1.png')">Program 1 - GCD Method 1</div>
+            <div class="program" onclick="showModal('Program1/method2.py', 'output2.png')">Program 1 - GCD Method 2</div>
+            <div class="program" onclick="showModal('Program1/method3.py', 'output3.png')">Program 1 - GCD Method 3</div>
+            <div class="program" onclick="showModal('Program2/Newton_method.py', 'output4.png')">Program 2 - Newton's Method</div>
+            <div class="program" onclick="showModal('Program3/method1.py', 'output5.png')">Program 3 - Exponentiation Method 1</div>
+            <div class="program" onclick="showModal('Program3/method2.py', 'output6.png')">Program 3 - Exponentiation Method 2</div>
+            <div class="program" onclick="showModal('Program3/method3.py', 'output7.png')">Program 3 - Exponentiation Method 3</div>
+            <div class="program" onclick="showModal('Program4/program4.py', 'output8.png')">Program 4 - Maximum from List</div>
+            <div class="program" onclick="showModal('Program5/liner_search.py', 'output9.png')">Program 5 - Linear Search</div>
+            <div class="program" onclick="showModal('Program6/code.py', 'output10.png')">Program 6 - Binary Search</div>
+            <div class="program" onclick="showModal('Program7/selection_sort.py', 'output11.png')">Program 7 - Selection Sort</div>
+            <div class="program" onclick="showModal('Program8/insertion_sort.py', 'output12.png')">Program 8 - Insertion Sort</div>
+            <div class="program" onclick="showModal('Program9/Merge_sort.py', 'output13.png')">Program 9 - Merge Sort</div>
+            <div class="program" onclick="showModal('Program10/first_n_prime.py', 'output14.png')">Program 10 - First N Prime Numbers</div>
+            <div class="program" onclick="showModal('Program11/multiply_matric.py', 'output15.png')">Program 11 - Matrix Multiplication</div>
+        </div>
+    </div>
+    <div class="thank-you">
+        <h2>Thank You</h2>
+        <p class="typing-effect">Thank you for visiting this repository!</p>
+        <div class="thank-you-animation">🎉 Thank You! 🎉</div>
+    </div>
 
-<hr>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Program Code</h2>
+            <pre id="programCode"></pre>
+            <h2>Output Image</h2>
+            <img id="outputImage" src="" alt="Output Image" style="max-width: 100%;">
+        </div>
+    </div>
 
-<div class="center">
-    <h2>How to Use</h2>
-    <p><i class="fas fa-code-branch"></i> 1. Clone the repository:</p>
-    <pre><code>git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git</code></pre>
-</div>
-
-<hr>
-
-<div class="center">
-    <h2>Connect with Me</h2>
-    <ul>
-        <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/UmeshCode1">github.com/UmeshCode1</a></li>
-        <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/umesh-patel-5647b42a4/">linkedin.com/in/UmeshPatel</a></li>
-        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:umesh.code1@gmail.com">umesh.code1@gmail.com</a></li>
-    </ul>
-</div>
-
-
-    <hr>
-
-    <h2 class="animated-text"><i>"Learning never stops, and neither does coding."</i> 😊</h2>
-
-    <hr>
-
-    <h1>PROGRAMS CODE AND OUTPUT PREVIEW</h1>
-
-    <hr>
-
-    <h2>PROGRAM 1</h2>
-    <pre><code>
-        // Program to input marks of 5 subjects and print the total and percentage using arrays.
-
-        #include <iostream>
-        using namespace std;
-        int main()
-        {
-            int marks[5], i, total = 0;
-            float percentage;
-            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
-            cout << "Enter marks of 5 subjects: \n";
-                for (i = 0; i < 5; i++)
-            {
-              cout<<"Subject "<<i+1<<": ";
-              cin >> marks[i];
-              total += marks[i];
-            }
-            percentage = (float)total / 5;
-            cout << "Total marks = " << total << endl;
-            cout << "Percentage = " << percentage << "%" << endl;
-            return 0;
+    <script>
+        function showModal(programPath, outputImagePath) {
+            document.getElementById('programCode').textContent = 'Loading...';
+            fetch(programPath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('programCode').textContent = data;
+                });
+            document.getElementById('outputImage').src = outputImagePath;
+            document.getElementById('myModal').style.display = "block";
         }
-        
-       
-        
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_1/Screenshot%202024-12-31%20095542.png" alt="Program 1 Output">
 
-    <hr>
-
-    <h2>PROGRAM 2</h2>
-    <pre><code>
-        // Program to find highest and lowest element in an array.
-
-        #include <iostream>
-        using namespace std;
-        int main()
-        {
-            int n;
-            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
-            cout << "Enter the number of elements in the array: ";
-            cin >> n;
-            int arr[n];
-            for(int i = 0; i < n; i++)
-            {
-                cout << "Enter element " << i + 1 << ": ";
-                cin >> arr[i];
-            }
-            int max = arr[0], min = arr[0];
-            for(int i = 1; i < n; i++)
-            {
-                if(arr[i] > max)
-                    max = arr[i];
-                if(arr[i] < min)
-                    min = arr[i];
-            }
-            cout << "The highest element in the array is: " << max << endl; 
-            cout << "The lowest element in the array is: " << min << endl;
-            return 0; 
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
         }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_2/Screenshot%202024-12-31%20095915.png" alt="Program 2 Output">
 
-    <hr>
-
-    <h2>PROGRAM 3</h2>
-    <pre><code>
-        // Program to read two 3x3 matrices and add them.
-
-        #include <iostream>
-        using namespace std;
-        int main(){
-        int m,n,i,j;
-        cout<<"Umesh Patel\nEnrollment Number: 0126AL231140\n";
-        cout<<"Enter the number of rows and columns of the matrix: ";
-        cin>>m>>n; 
-        int a[m][n],b[m][n],c[m][n];
-        cout<<"Enter the elements of the first matrix: \n";
-        for(i=0;i<m;i++)
-        {
-        for(j=0;j<n;j++)
-        {
-        cout<<"Enter element "<<i+1<<","<<j+1<<": ";
-        cin>>a[i][j];
-        }
-        }
-        cout<<"Enter the elements of the second matrix: \n";
-        for(i=0;i<m;i++)
-        {
-        for(j=0;j<n;j++)
-        {
-        cout<<"Enter element "<<i+1<<","<<j+1<<": ";
-        cin>>b[i][j];
-        }
-        }
-        for(i=0;i<m;i++)
-        {
-        for(j=0;j<n;j++)
-        {
-        c[i][j]=a[i][j]+b[i][j];
-        }
-        }
-        
-        cout<<"The sum of the two matrices is: \n"; 
-        for(i=0;i<m;i++)
-        {
-        for(j=0;j<n;j++)
-        {
-        cout<<c[i][j]<<" ";
-        }
-        cout<<endl;
-        }
-        return 0;
-        }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_3/Screenshot%202024-12-31%20100412.png" alt="Program 3 Output">
-
-    <hr>
-
-    <h2>PROGRAM 4</h2>
-    <pre><code>
-        // Program to create a linked list and implement insertion and deletion operations on it.
-
-        #include <iostream>
-        using namespace std;
-        
-        // Define a node structure
-        struct Node {
-            int data;
-            Node* next;
-            
-            Node(int val) {
-                data = val;
-                next = nullptr;
-            }
-        };
-        
-        // Linked List class with insertion and deletion operations
-        class LinkedList {
-        private:
-            Node* head;
-        
-        public:
-            LinkedList() {
-                head = nullptr;
-            }
-        
-            // Function to insert a node at the beginning of the list
-            void insertAtBeginning(int value) {
-                Node* newNode = new Node(value);
-                newNode->next = head;
-                head = newNode;
-            }
-        
-            // Function to insert a node at the end of the list
-            void insertAtEnd(int value) {
-                Node* newNode = new Node(value);
-                if (head == nullptr) {
-                    head = newNode;
-                    return;
-                }
-        
-                Node* temp = head;
-                while (temp->next != nullptr) {
-                    temp = temp->next;
-                }
-                temp->next = newNode;
-            }
-        
-            // Function to delete a node with a specific value
-            void deleteNode(int value) {
-                if (head == nullptr) {
-                    cout << "List is empty!" << endl;
-                    return;
-                }
-        
-                // If the node to be deleted is the head
-                if (head->data == value) {
-                    Node* temp = head;
-                    head = head->next;
-                    delete temp;
-                    return;
-                }
-        
-                Node* temp = head;
-                while (temp->next != nullptr && temp->next->data != value) {
-                    temp = temp->next;
-                }
-        
-                // If the value is not found
-                if (temp->next == nullptr) {
-                    cout << "Value not found!" << endl;
-                    return;
-                }
-        
-                // Delete the node
-                Node* nodeToDelete = temp->next;
-                temp->next = temp->next->next;
-                delete nodeToDelete;
-            }
-        
-            // Function to display the list
-            void display() {
-                if (head == nullptr) {
-                    cout << "List is empty!" << endl;
-                    return;
-                }
-        
-                Node* temp = head;
-                while (temp != nullptr) {
-                    cout << temp->data << " -> ";
-                    temp = temp->next;
-                }
-                cout << "NULL" << endl;
-            }
-        };
-        
-        // Main function to test the Linked List operations
-        int main() {
-            cout<<"Umesh Patel\nEnrollment Number: 0126AL231140\n";
-        
-            LinkedList list;
-            
-            // Insert elements at the beginning
-            list.insertAtBeginning(10);
-            list.insertAtBeginning(20);
-            list.insertAtBeginning(30);
-            
-            // Display the list
-            cout << "List after insertion at the beginning: ";
-            list.display();
-        
-            // Insert elements at the end
-            list.insertAtEnd(40);
-            list.insertAtEnd(50);
-            
-            // Display the list
-            cout << "List after insertion at the end: ";
-            list.display();
-        
-            // Delete a node with value 20
-            list.deleteNode(20);
-            cout << "List after deleting node with value 20: ";
-            list.display();
-        
-            // Delete a node with value 100 (not in the list)
-            list.deleteNode(100);
-            
-            return 0;
-        }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_4/Screenshot%202024-12-31%20100444.png" alt="Program 4 Output">
-
-    <hr>
-
-    <h2>PROGRAM 5</h2>
-    <pre><code>
-        // Program to generate Fibonacci series using recursion.
-
-        #include <iostream>
-        using namespace std;
-        int fibonacci(int n)
-        {
-            if(n == 0)
-                return 0;
-            else if(n == 1)
-                return 1;
-            else
-                return fibonacci(n - 1) + fibonacci(n - 2);
-        }
-        int main()
-        {
-            int n;
-            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
-            cout << "Enter the number of terms in the Fibonacci series: ";
-            cin >> n;
-            cout << "The Fibonacci series is: ";
-            for(int i = 0; i < n; i++)
-                cout << fibonacci(i) << " ";
-            return 0;
-        }
-        
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_5/image.png" alt="Program 5 Output">
-
-    <hr>
-
-    <h2>PROGRAM 6</h2>
-    <pre><code>
-        // Program to create a stack and implement push and pop operations on it.
-
-        #include <iostream>
-        
-        using namespace std;
-        
-        const int MAX_SIZE = 100;
-        
-        class Stack {
-        private:
-            int arr[MAX_SIZE];
-            int top;
-        
-        public:
-            Stack() : top(-1) {}
-        
-            bool isEmpty() {
-                return (top == -1);
-            }
-        
-            bool isFull() {
-                return (top == MAX_SIZE - 1);
-            }
-        
-            void push(int data) {
-                if (isFull()) {
-                    cout << "Stack Overflow" << endl;
-                    return;
-                }
-                top++;
-                arr[top] = data;
-            }
-        
-            int pop() {
-                if (isEmpty()) {
-                    cout << "Stack Underflow" << endl;
-                    return -1; // Return an error value
-                }
-                int data = arr[top];
-                top--;
-                return data;
-            }
-        
-            void display() {
-                if (isEmpty()) {
-                    cout << "Stack is empty" << endl;
-                } else {
-                    cout << "Stack elements:" << endl;
-                    for (int i = top; i >= 0; i--) {
-                        cout << arr[i] << " ";
-                    }
-                    cout << endl;
-                }
-            }
-        };
-        
-        int main() {
-            Stack stack;
-            int choice, data;
-        
-            cout << "Name: Umesh Patel\n";  
-            cout << "Enrollment No: 0126AL231140\n";
-        
-        
-            while (true) {
-                cout << "\n1. Push\n";
-                cout << "2. Pop\n";
-                cout << "3. Display\n";
-                cout << "4. Exit\n";
-                cout << "Enter your choice: ";
-                cin >> choice;
-        
-                switch (choice) {
-                    case 1:
-                        cout << "Enter data to push: ";
-                        cin >> data;
-                        stack.push(data);
-                        break;
-        
-                    case 2:
-                        data = stack.pop();
-                        if (data != -1) { // Check for error
-                            cout << "Popped element: " << data << endl;
-                        }
-                        break;
-        
-                    case 3:
-                        stack.display();
-                        break;
-        
-                    case 4:
-                        return 0;
-        
-                    default:
-                        cout << "Invalid choice" << endl;
-                }
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
             }
         }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_6/Screenshot%202024-12-31%20115625.png" alt="Program 6 Output">
-
-    <hr>
-
-    <h2>PROGRAM 7</h2>
-    <pre><code>
-        // Program to create a queue and implement enqueue and dequeue operations on it.
-
-        #include <stdio.h>
-        #define MAX 10 // Maximum size of the queue
-        
-        int queue[MAX];
-        int front = -1, rear = -1;
-        
-        // Function to check if the queue is empty
-        int isEmpty() {
-            return (front == -1);
-        }
-        
-        // Function to check if the queue is full
-        int isFull() {
-            return (rear == MAX - 1);
-        }
-        
-        // Function to insert an element into the queue
-        void enqueue(int item) {
-            if (isFull()) {
-                printf("Queue Overflow\n");
-            } else {
-                if (isEmpty()) {
-                    front = 0;
-                }
-                rear = rear + 1;
-                queue[rear] = item;
-            }
-        }
-        
-        // Function to delete an element from the queue
-        int dequeue() {
-            int item;
-            if (isEmpty()) {
-                printf("Queue Underflow\n");
-                return -1; // Return an error value
-            } else {
-                item = queue[front];
-                if (front == rear) {
-                    front = -1;
-                    rear = -1;
-                } else {
-                    front = front + 1;
-                }
-                return item;
-            }
-        }
-        
-        int main() {
-            int choice, item;
-        
-            printf("Name: Umesh Patel\n");
-            printf("Enrollment No: 0126AL231140\n");
-        
-            while (1) {
-                printf("\n1. Enqueue\n");
-                printf("2. Dequeue\n");
-                printf("3. Display\n");
-                printf("4. Exit\n");
-                printf("Enter your choice: ");
-                scanf("%d", &choice);
-        
-                switch (choice) {
-                    case 1:
-                        printf("Enter the element to be inserted: ");
-                        scanf("%d", &item);
-                        enqueue(item);
-                        break;
-        
-                    case 2:
-                        item = dequeue();
-                        if (item != -1) {
-                            printf("Dequeued element: %d\n", item);
-                        }
-                        break;
-        
-                    case 3:
-                        if (isEmpty()) {
-                            printf("Queue is empty\n");
-                        } else {
-                            printf("Queue elements:\n");
-                            for (int i = front; i <= rear; i++) {
-                                printf("%d ", queue[i]);
-                            }
-                            printf("\n");
-                        }
-                        break;
-        
-                    case 4:
-                        return 0;
-        
-                    default:
-                        printf("Invalid choice\n");
-                }
-            }
-        
-            return 0;
-        }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_7/Screenshot%202024-12-31%20120332.png" alt="Program 7 Output">
-
-    <hr>
-
-    <h2>PROGRAM 8</h2>
-    <pre><code>
-        // Program to create a circular queue and implement insertion and deletion operations on it.
-
-        #include <iostream>
-        using namespace std;
-        
-        #define MAX_SIZE 5 // Define the maximum size of the circular queue
-        
-        class CircularQueue {
-        private:
-            int front, rear;
-            int arr[MAX_SIZE];
-        
-        public:
-            CircularQueue() {
-                front = -1;
-                rear = -1;
-            }
-        
-            bool isEmpty() {
-                return (front == -1);
-            }
-        
-            bool isFull() {
-                return ((front == 0 && rear == MAX_SIZE - 1) || front == rear + 1);
-            }
-        
-            void enqueue(int data) {
-                if (isFull()) {
-                    cout << "Queue is full\n";
-                } else {
-                    if (isEmpty()) {
-                        front = rear = 0;
-                    } else {
-                        rear = (rear + 1) % MAX_SIZE;
-                    }
-                    arr[rear] = data;
-                }
-            }
-        
-            int dequeue() {
-                if (isEmpty()) {
-                    cout << "Queue is empty\n";
-                    return -1;
-                } else {
-                    int data = arr[front];
-                    if (front == rear) {
-                        front = rear = -1;
-                    } else {
-                        front = (front + 1) % MAX_SIZE;
-                    }
-                    return data;
-                }
-            }
-        
-            void display() {
-                if (isEmpty()) {
-                    cout << "Queue is empty\n";
-                } else {
-                    cout << "Queue elements are: ";
-                    int i = front;
-                    while (true) {
-                        cout << arr[i] << " ";
-                        if (i == rear) break;
-                        i = (i + 1) % MAX_SIZE;
-                    }
-                    cout << endl;
-                }
-            }
-        };
-        
-        int main() {
-            CircularQueue cq;
-            int choice, data;
-        
-            cout << "Name: Umesh Patel\n";
-            cout << "Enrollment No: 0126AL231140\n";
-        
-            while (true) {
-                cout << "\n1. Enqueue\n";
-                cout << "2. Dequeue\n";
-                cout << "3. Display\n";
-                cout << "4. Exit\n";
-                cout << "Enter your choice: ";
-                cin >> choice;
-        
-                switch (choice) {
-                    case 1:
-                        cout << "Enter data to enqueue: ";
-                        cin >> data;
-                        cq.enqueue(data);
-                        break;
-        
-                    case 2:
-                        data = cq.dequeue();
-                        if (data != -1) {
-                            cout << "Dequeued element: " << data << endl;
-                        }
-                        break;
-        
-                    case 3:
-                        cq.display();
-                        break;
-        
-                    case 4:
-                        return 0;
-        
-                    default:
-                        cout << "Invalid choice\n";
-                }
-            }
-        }
-        
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_8/Screenshot%202024-12-31%20120605.png" alt="Program 8 Output">
-
-    <hr>
-
-    <h2>PROGRAM 9</h2>
-    <pre><code>
-        // Program to traverse a binary tree in pre-order, in-order and post-order.
-
-        #include <iostream>
-        using namespace std;
-        
-        struct Node {
-            char data;
-            Node* left;
-            Node* right;
-        };
-        
-        Node* newNode(char data) {
-            Node* node = new Node();
-            node->data = data;
-            node->left = nullptr;
-            node->right = nullptr;
-            return node;
-        }
-        
-        // In-order traversal
-        void inorder(Node* root) {
-            if (root != nullptr) {
-                inorder(root->left);
-                cout << root->data << " ";
-                inorder(root->right);
-            }
-        }
-        
-        // Pre-order traversal
-        void preorder(Node* root) {
-            if (root != nullptr) {
-                cout << root->data << " ";
-                preorder(root->left);
-                preorder(root->right);
-            }
-        }
-        
-        // Post-order traversal
-        void postorder(Node* root) {
-            if (root != nullptr) {
-                postorder(root->left);
-                postorder(root->right);
-                cout << root->data << " ";
-            }
-        }
-        
-        int main() {
-            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
-        
-            Node* root = newNode('A');
-            root->left = newNode('B');
-            root->right = newNode('C');
-            root->left->left = newNode('D');
-            root->left->right = newNode('E');
-           // root->right->left = newNode('F');
-            root->left->left->left = newNode('G');
-            root->right->right = newNode('F');
-        
-            cout << "In-order traversal: ";
-            inorder(root);
-            cout << endl;
-        
-            cout << "Pre-order traversal: ";
-            preorder(root);
-            cout << endl;
-        
-            cout << "Post-order traversal: ";
-            postorder(root);
-            cout << endl;
-        
-            return 0;
-        }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_9/Screenshot%202024-12-31%20102845.png" alt="Program 9 Output">
-
-    <hr>
-
-    <h2>PROGRAM 10</h2>
-    <pre><code>
-        // Program to implement binary search .
-
-        #include <iostream>
-        
-        using namespace std;
-        
-        int binarySearch(int arr[], int low, int high, int target) {
-            while (low <= high) {
-                int mid = low + (high - low) / 2;
-        
-                if (arr[mid] == target) {
-                    return mid; // Target found
-                }
-        
-                if (arr[mid] < target) {
-                    low = mid + 1; // Search in the right half
-                } else {
-                    high = mid - 1; // Search in the left half
-                }
-            }
-        
-            return -1; // Target not found
-        }
-        
-        int main() {
-            cout << "Umesh Patel\nEnrollment Number: 0126AL231140\n";
-        
-            int arr[] = {2, 5, 8, 12, 16, 23, 38, 56, 72, 91};
-            int n = sizeof(arr) / sizeof(arr[0]);
-            int target = 23;
-        
-            int result = binarySearch(arr, 0, n - 1, target);
-            if (result != -1) {
-                cout << "Elements are: ";
-                for (int i = 0; i < n; i++) {
-                    cout << arr[i] << " ";
-                }
-                cout << endl;
-                cout << "Element found at index " << result << endl;
-            } else {
-                cout << "Element not found in the array" << endl;
-            }
-        
-            return 0;
-        }
-    </code></pre>
-    <h2>OUTPUT</h2>
-    <img src="Program_10/Screenshot%202024-12-31%20120908.png" alt="Program 10 Output">
-
-   
-   <hr>
-    <h1 class="highlight fade-in-bottom blinking typing"><i>"Thank You For Visit."</i> 😊</h1>
-    <hr>
-    
+    </script>
 </body>
 </html>
