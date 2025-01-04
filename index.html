@@ -408,6 +408,16 @@
         50% { border-color: orange; }
     }
 </style>
+
+    <!-- Modal structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <pre id="programCode"></pre>
+            <img id="outputImage" src="" alt="Output Image">
+        </div>
+    </div>
+
     <script>
         function showModal(programPath, outputImagePath) {
             document.getElementById('programCode').textContent = 'Loading...';
