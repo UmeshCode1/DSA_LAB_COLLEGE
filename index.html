@@ -349,14 +349,65 @@
     <a href="mailto:umesh.code1@gmail.com"><i class="fas fa-envelope"></i></a>
 </div>
 
-<div class="thank-you">
-    <h2>Thank You</h2>
+<div class="thank-you animated">
+    
     <p class="typing-effect">Thank you for visiting this repository!</p>
-    <div class="thank-you-animation">🎉 Thank You! 🎉</div>
+    <h2 class="thank-you-animation">🎉 Thank You! 🎉</h2>
 </div>
 
-<p class="typing"><em>"Learning never stops, and neither does coding."</em> 😊</p>
+<style>
+    .animated {
+        animation: fadeIn 2s ease-in-out, bounce 2s infinite;
+    }
 
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+</style>
+
+<p class="typing highlight bold"><em>"Learning never stops, and neither does coding."</em> 😊</p>
+
+<style>
+    .highlight {
+        background-color: #ffeb3b;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .typing {
+        overflow: hidden;
+        border-right: .15em solid orange;
+        white-space: nowrap;
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: orange; }
+    }
+</style>
     <script>
         function showModal(programPath, outputImagePath) {
             document.getElementById('programCode').textContent = 'Loading...';
