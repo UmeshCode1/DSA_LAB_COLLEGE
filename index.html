@@ -217,6 +217,19 @@
             text-decoration: none;
             cursor: pointer;
         }
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            color: #4CAF50;
+            margin: 0 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #333;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -300,21 +313,18 @@
     <div class="card">
         <h2>Repository Programs</h2>
         <div class="program-preview">
-            <div class="program" onclick="showModal('Program1/method1.py', 'output1.png')">Program 1 - GCD Method 1</div>
-            <div class="program" onclick="showModal('Program1/method2.py', 'output2.png')">Program 1 - GCD Method 2</div>
-            <div class="program" onclick="showModal('Program1/method3.py', 'output3.png')">Program 1 - GCD Method 3</div>
-            <div class="program" onclick="showModal('Program2/Newton_method.py', 'output4.png')">Program 2 - Newton's Method</div>
-            <div class="program" onclick="showModal('Program3/method1.py', 'output5.png')">Program 3 - Exponentiation Method 1</div>
-            <div class="program" onclick="showModal('Program3/method2.py', 'output6.png')">Program 3 - Exponentiation Method 2</div>
-            <div class="program" onclick="showModal('Program3/method3.py', 'output7.png')">Program 3 - Exponentiation Method 3</div>
-            <div class="program" onclick="showModal('Program4/program4.py', 'output8.png')">Program 4 - Maximum from List</div>
-            <div class="program" onclick="showModal('Program5/liner_search.py', 'output9.png')">Program 5 - Linear Search</div>
-            <div class="program" onclick="showModal('Program6/code.py', 'output10.png')">Program 6 - Binary Search</div>
-            <div class="program" onclick="showModal('Program7/selection_sort.py', 'output11.png')">Program 7 - Selection Sort</div>
-            <div class="program" onclick="showModal('Program8/insertion_sort.py', 'output12.png')">Program 8 - Insertion Sort</div>
-            <div class="program" onclick="showModal('Program9/Merge_sort.py', 'output13.png')">Program 9 - Merge Sort</div>
-            <div class="program" onclick="showModal('Program10/first_n_prime.py', 'output14.png')">Program 10 - First N Prime Numbers</div>
-            <div class="program" onclick="showModal('Program11/multiply_matric.py', 'output15.png')">Program 11 - Matrix Multiplication</div>
+            <div class="program" onclick="showModal('Program_1/program1.cpp', 'Program_1/Screenshot%202024-12-31%20095542.png')">Program 1 - Input Marks</div>
+            <div class="program" onclick="showModal('Program_2/Program2.cpp', 'Program_2/Screenshot%202024-12-31%20095915.png')">Program 2 - Highest and Lowest Element</div>
+            <div class="program" onclick="showModal('Program_3/Program3.cpp', 'Program_3/Screenshot%202024-12-31%20100412.png')">Program 3 - Matrix Addition</div>
+            <div class="program" onclick="showModal('Program_4/Program4.cpp', 'Program_4/Screenshot%202024-12-31%20100444.png')">Program 4 - Linked List Operations</div>
+            <div class="program" onclick="showModal('Program_5/Program5.cpp', 'Program_5/image.png')">Program 5 - Fibonacci Series</div>
+            <div class="program" onclick="showModal('Program_6/Program6.cpp', 'Program_6/Screenshot%202024-12-31%20115625.png')">Program 6 - Stack Operations</div>
+            <div class="program" onclick="showModal('Program_7/Program7.cpp', 'Program_7/Screenshot%202024-12-31%20120332.png')">Program 7 - Queue Operations</div>
+            <div class="program" onclick="showModal('Program_8/Program8.cpp', 'Program_8/Screenshot%202024-12-31%20120605.png')">Program 8 - Circular Queue</div>
+            <div class="program" onclick="showModal('Program_9/Program9.cpp', 'Program_9/Screenshot%202024-12-31%20102845.png')">Program 9 - Binary Tree Traversal</div>
+            <div class="program" onclick="showModal('Program_10/Program10.cpp', 'Program_10/Screenshot%202024-12-31%20120908.png')">Program 10 - Binary Search</div>
+            <div class="program" onclick="showModal('Program_11/Program11.cpp', 'Program_11/Screenshot%202024-12-31%20120908.png')">Program 11 - Sorting</div>
+            <div class="program" onclick="showModal('Program_12/Program12.cpp', 'Program_12/Screenshot%202024-12-31%20120908.png')">Program 12 - Graph Traversal</div>
         </div>
     </div>
     <div class="thank-you">
@@ -333,6 +343,29 @@
             <img id="outputImage" src="" alt="Output Image" style="max-width: 100%;">
         </div>
     </div>
+
+    <hr>
+
+    <h2>GitHub Pages</h2>
+    <p>The repository is also published at <a href="https://umeshcode1.github.io/DSA_LAB_COLLEGE/" target="_blank">GitHub Pages</a>. Visit the page to see the programs in action.</p>
+    <p>Website link:</p>
+    <pre><code>https://umeshcode1.github.io/DSA_LAB_COLLEGE</code></pre>
+
+    <h2>How to Use</h2>
+    <ol>
+        <li>Clone the repository:
+            <pre><code>git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git</code></pre>
+        </li>
+    </ol>
+
+    <h2>Connect with Me</h2>
+    <div class="social-icons">
+        <a href="https://github.com/UmeshCode1" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/umesh-patel-5647b42a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:umesh.code1@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <p><em>"Learning never stops, and neither does coding."</em> 😊</p>
 
     <script>
         function showModal(programPath, outputImagePath) {
