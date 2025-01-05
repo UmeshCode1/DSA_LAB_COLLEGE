@@ -39,12 +39,6 @@ This repository contains my college DSA lab programs from Semester 3. Below is t
    cd DSA_LAB_COLLEGE
    ```
 
-3. **Compile and run the programs using a C++ compiler, for example:**
-   ```bash
-   g++ ./programs/01_marks_array.cpp -o marks_array
-   ./marks_array
-   ```
-
 ## Requirements
 
 - A C++ compiler (e.g., g++, clang++)
