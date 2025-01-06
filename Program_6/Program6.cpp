@@ -98,53 +98,7 @@ int main() {
 }
 
 
-// Output:
-// Program to create a stack and implement push and pop operations on it.
 
-// Name: Umesh Patel
-// Enrollment No: 0126AL231140
-
-// 1. Push
-// 2. Pop
-// 3. Display
-// 4. Exit
-// Enter your choice: 1
-// Enter data to push: 10
-
-// 1. Push
-// 2. Pop
-// 3. Display
-// 4. Exit
-// Enter your choice: 1
-// Enter data to push: 20
-
-// 1. Push
-// 2. Pop
-// 3. Display
-// 4. Exit
-// Enter your choice: 1
-// Enter data to push: 30
-
-// 1. Push
-// 2. Pop
-// 3. Display
-// 4. Exit
-// Enter your choice: 3
-// Stack elements:
-// 30 20 10
-
-// 1. Push
-// 2. Pop
-// 3. Display
-// 4. Exit
-// Enter your choice: 2
-// Popped element: 30
-
-// 1. Push
-// 2. Pop
-// 3. Display
-// 4. Exit
-// Enter your choice: 4
 
 
 

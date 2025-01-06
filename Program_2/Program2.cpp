@@ -29,16 +29,4 @@ int main()
 
 
 
-// Output:
-// Program to find highest and lowest element in an array.  
 
-// Umesh Patel
-// Enrollment Number: 0126AL231140
-// Enter the number of elements in the array: 5
-// Enter element 1: 10
-// Enter element 2: 20
-// Enter element 3: 30
-// Enter element 4: 40
-// Enter element 5: 50
-// The highest element in the array is: 50
-// The lowest element in the array is: 10

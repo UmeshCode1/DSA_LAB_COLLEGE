@@ -128,10 +128,4 @@ int main() {
     return 0;
 }
 
-// Output:
-// Umesh Patel      
-// Enrollment Number: 0126AL231140
-// List after insertion at the beginning: 30 -> 20 -> 10 -> NULL
-// List after insertion at the end: 30 -> 20 -> 10 -> 40 -> 50 -> NULL
-// List after deleting node with value 20: 30 -> 10 -> 40 -> 50 -> NULL
-// Value not found!
+

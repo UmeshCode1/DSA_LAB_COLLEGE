@@ -72,13 +72,5 @@ int main() {
 }
 
 
-// Output:
-// Program to traverse a binary tree in pre-order, in-order and post-order.
 
-// Umesh Patel
-// Enrollment Number: 0126AL231140
-
-// In-order traversal: G D B E A C F
-// Pre-order traversal: A B D G E C F
-// Post-order traversal: G D E B F C A
 

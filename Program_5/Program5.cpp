@@ -24,11 +24,5 @@ int main()
 }
 
 
-// Output:
-// Program to generate Fibonacci series using recursion.
 
-// Umesh Patel
-// Enrollment Number: 0126AL231140
-// Enter the number of terms in the Fibonacci series: 10
-// The Fibonacci series is: 0 1 1 2 3 5 8 13 21 34
 

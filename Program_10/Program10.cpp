@@ -44,10 +44,3 @@ int main() {
     return 0;
 }
 
-// Output:
-// Program to implement binary search.
-
-// Umesh Patel
-// Enrollment Number: 0126AL231140
-// Elements are: 2 5 8 12 16 23 38 56 72 91
-// Element found at index 5

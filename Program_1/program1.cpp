@@ -21,18 +21,5 @@ int main()
 }
 
 
-// Output:
-// Program to input marks of 5 subjects and print the total and percentage using arrays.
-
-// Umesh Patel
-// Enrollment Number: 0126AL231140
-// Enter marks of 5 subjects:
-// Subject 1: 90
-// Subject 2: 80
-// Subject 3: 70
-// Subject 4: 60
-// Subject 5: 50
-// Total marks = 350
-// Percentage = 70%
 
 
