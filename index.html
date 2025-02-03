@@ -330,16 +330,278 @@
 
     <hr>
 
-<h2>View My Repository</h2>
-<p>The repository is also available on <a href="https://github.com/UmeshCode1/DSA_LAB_COLLEGE" target="_blank">GitHub</a>.</p>
+<!-- Repository Section -->
+<div class="repository-section fade-in-bottom">
+    <h2 class="animated-title glow">Explore the Repository</h2>
+    <div class="repo-container">
+        <div class="repo-card-modern">
+            <i class="fab fa-github fa-4x pulse rainbow"></i>
+            <h3 class="sliding-text highlight-text">View on GitHub</h3>
+            <p class="fade-in typewriter">Access the complete source code and documentation</p>
+            <div class="highlight-container"></div>
+                <a href="https://github.com/UmeshCode1/DSA_LAB_COLLEGE" target="_blank" class="modern-button floating">
+                    <span class="button-text">Open Repository</span>
+                    <i class="fas fa-arrow-right bounce-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-<button onclick="window.open('https://github.com/UmeshCode1/DSA_LAB_COLLEGE', '_blank')" class="toggle-button">View Repository on GitHub</button>
+<style>
+.repository-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+}
+
+.animated-title {
+    position: relative;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+}
+
+.glow {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.rainbow {
+    animation: rainbow 5s linear infinite;
+}
+
+.highlight-text {
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorChange 5s infinite;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid #4CAF50;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.highlight-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.highlight-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        #4CAF50,
+        #45a049,
+        #4CAF50
+    );
+    animation: rotate 4s linear infinite;
+    z-index: -1;
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.bounce-arrow {
+    animation: bounceRight 1.5s infinite;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #4CAF50, 0 0 15px #4CAF50;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+    }
+}
+
+@keyframes rainbow {
+    0% { color: #4CAF50; }
+    25% { color: #2196F3; }
+    50% { color: #9C27B0; }
+    75% { color: #F44336; }
+    100% { color: #4CAF50; }
+}
+
+@keyframes colorChange {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes bounceRight {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(3px); }
+}
+
+/* Keep existing styles and add these new ones */
+.repo-card-modern {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.repo-card-modern:hover {
+    transform: translateY(-10px) rotateX(5deg);
+}
+
+.modern-button {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.modern-button:hover {
+    background: linear-gradient(45deg, #45a049, #4CAF50);
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Keep all other existing styles */
+</style>
+
+<!-- Other Repositories Section -->
+<div class="other-repos-section fade-in-bottom">
+    <h2>Explore My Other Lab Repositories</h2>
+    <div class="repo-cards">
+        <div class="repo-card" onclick="window.open('https://umeshcode1.github.io/OOPS_LAB_SEM3/', '_blank')">
+            <i class="fas fa-code fa-3x"></i>
+            <h3>OOPS Lab</h3>
+            <p>Object-Oriented Programming Laboratory works and implementations</p>
+            <div class="repo-hover">
+                <span>Click to Visit</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="repo-card" onclick="window.open('https://umeshcode1.github.io/PYTHON_LAB_3sem/', '_blank')">
+            <i class="fab fa-python fa-3x"></i>
+            <h3>Python Lab</h3>
+            <p>Python Programming Laboratory experiments and projects</p>
+            <div class="repo-hover">
+                <span>Click to Visit</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.other-repos-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.repo-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.repo-card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.repo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(76, 175, 80, 0.2);
+}
+
+.repo-card i {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.repo-card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.repo-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.repo-hover {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: rgba(76, 175, 80, 0.9);
+    color: white;
+    padding: 10px;
+    transition: bottom 0.3s ease;
+}
+
+.repo-card:hover .repo-hover {
+    bottom: 0;
+}
+
+.repo-hover i {
+    color: white;
+    margin-left: 8px;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .repo-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .repo-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+</style>
 
 <h2>How to Use</h2>
 <ol>
     <li>Clone the repository:
         <pre><code>git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git</code></pre>
-    </li>
+    </div></li>
 </ol>
 
 <h2>Connect with Me</h2>
@@ -377,7 +639,7 @@
             transform: translateY(-30px);
         }
         60% {
-            transform: translateY(-15px);
+            transform</div>: translateY(-15px);
         }
     }
 </style>
@@ -408,6 +670,8 @@
         50% { border-color: orange; }
     }
 </style>
+
+
 
     <!-- Modal structure -->
     <div id="myModal" class="modal">
