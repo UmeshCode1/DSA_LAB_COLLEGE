@@ -596,20 +596,369 @@
     }
 }
 </style>
-
-<h2>How to Use</h2>
-<ol>
-    <li>Clone the repository:
-        <pre><code>git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git</code></pre>
-    </div></li>
-</ol>
-
-<h2>Connect with Me</h2>
-<div class="social-icons">
-    <a href="https://github.com/UmeshCode1" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/umesh-patel-5647b42a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:umesh.code1@gmail.com"><i class="fas fa-envelope"></i></a>
+<!-- Usage Guide Section -->
+<div class="usage-section glassmorphism">
+    <h2 class="section-title gradient-text animate-gradient">Quick Start Guide</h2>
+    <div class="installation-steps">
+        <div class="installation-card">
+            <div class="step-number pulse">1</div>
+            <div class="command-box">
+                <code class="monospace typewriter">git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git</code>
+                <button class="copy-btn modern-button" onclick="copyToClipboard('git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git')">
+                    <i class="fas fa-copy"></i>
+                    <span class="tooltip">Copy</span>
+                </button>
+            </div>
+        </div>
+        <div class="installation-card">
+            <div class="step-number pulse">2</div>
+            <div class="command-box">
+                <code class="monospace typewriter">cd DSA_LAB_COLLEGE</code>
+                <button class="copy-btn modern-button" onclick="copyToClipboard('cd DSA_LAB_COLLEGE')">
+                    <i class="fas fa-copy"></i>
+                    <span class="tooltip">Copy</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <h2 class="ection-title gradient-text animate-gradient">Let's Connect! 🤝</h2>
+    <!-- Connect Section -->
+<div class="social-icons" style="display: flex; justify-content: center; align-items: center;">
+        <a href="https://github.com/UmeshCode1" target="_blank" class="social-icon github">
+            <div class="icon-3d">
+                <i class="fab fa-github" style="color: #f0f6fc;"></i>
+            </div>
+            <span class="tooltip">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/umesh-patel-5647b42a4/" target="_blank" class="social-icon linkedin">
+            <div class="icon-3d">
+                <i class="fab fa-linkedin" style="color: #ffffff;"></i>
+            </div>
+            <span class="tooltip">LinkedIn</span>
+        </a>
+    <a href="mailto:umesh.code1@gmail.com" class="social-icon email">
+        <div class="icon-3d">
+            <i class="fas fa-envelope" style="color: #ffffff;"></i>
+        </div>
+        <span class="tooltip">Email</span>
+    </a>
+    <a href="https://wa.me/+919516573165" target="_blank" class="social-icon whatsapp">
+        <div class="icon-3d">
+            <i class="fab fa-whatsapp" style="color: #ffffff;"></i>
+        </div>
+        <span class="tooltip">WhatsApp</span>
+    <a href="https://instagram.com/umesh_code1" target="_blank" class="social-icon instagram">
+        <div class="icon-3d">
+            <i class="fab fa-instagram" style="color: #ffffff;"></i>
+        </div>
+        <span class="tooltip">Instagram</span>
+    </a>
 </div>
+</div>
+</div>
+
+
+<style>
+.connect-heading {
+    text-align: center;
+    background: linear-gradient(45deg, #00c853, #64dd17);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.5em;
+    margin: 2rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.social-icons-container {
+    padding: 2rem 0;
+    perspective: 1000px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.social-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 200, 83, 0.1);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.icon-3d {
+    font-size: 2.5rem;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-10px) rotateX(20deg) rotateY(20deg);
+    box-shadow: 
+        0 15px 35px rgba(0, 200, 83, 0.3),
+        0 0 20px rgba(0, 200, 83, 0.1) inset;
+}
+
+.github:hover {
+    background: linear-gradient(145deg, #2b3137, #24292e);
+}
+
+.linkedin:hover {
+    background: linear-gradient(145deg, #0077b5, #00a0dc);
+}
+
+.email:hover {
+    background: linear-gradient(145deg, #ff5252, #ff1744);
+}
+
+.whatsapp:hover {
+    background: linear-gradient(145deg, #00e676, #00c853);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-icon:hover .icon-3d {
+    transform: translateZ(30px);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #00c853, #64dd17);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 200, 83, 0.2);
+}
+
+.social-icon:hover .tooltip {
+    opacity: 1;
+    bottom: -30px;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 200, 83, 0.1);
+    border-radius: inherit;
+    transition: all 0.5s ease;
+    transform: translateZ(-1px);
+}
+
+.social-icon:hover::before {
+    transform: translateZ(-10px);
+    filter: blur(15px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .connect-heading {
+        font-size: 2em;
+    }
+    
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-3d {
+        font-size: 2rem;
+    }
+}
+</style>
+    
+
+<style>
+.usage-section {
+    padding: 3rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.usage-section:hover {
+    transform: translateY(-5px);
+}
+
+.animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s linear infinite;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #4CAF50, #2196F3, #4CAF50);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.installation-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.installation-card {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+.installation-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.command-box {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1.8rem;
+    border-radius: 15px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fira Code', monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+.command-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+}
+
+.command-box:hover::before {
+    transform: translateX(100%);
+}
+
+.modern-button {
+    background: transparent;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.modern-button:hover {
+    background: #4CAF50;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.
+@media (max-width: 768px) {
+    .usage-section {
+        padding: 2rem;
+        margin: 1rem;
+    }
+    
+    .installation-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    
+    .command-box {
+        font-size: 0.9rem;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+    
+    .gradient-text {
+        font-size: 2rem;
+    }
+}
+</style>
+
+<script>
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        const btn = event.currentTarget;
+        btn.innerHTML = '<i class="fas fa-check"></i><span class="tooltip">Copied!</span>';
+        setTimeout(() => {
+            btn.innerHTML = '<i class="fas fa-copy"></i><span class="tooltip">Copy</span>';
+        }, 2000);
+    });
+}
+</script>
 
 <div class="thank-you animated">
     
@@ -639,7 +988,7 @@
             transform: translateY(-30px);
         }
         60% {
-            transform</div>: translateY(-15px);
+            transform: translateY(-15px);
         }
     }
 </style>
