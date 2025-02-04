@@ -332,28 +332,28 @@
 
 <!-- Modern Repository Section -->
 <div class="repository-section glassmorphism">
-    <h2 class="animated-title neon-glow floating">📚 Explore My Programming Journey</h2>
+    <h2 class="animated-title neon-glow floating">🚀 Explore My Programming Journey</h2>
     
-    <!-- Main Repository Card with Enhanced Design -->
+    <!-- Main Repository Card -->
     <div class="repo-container">
         <div class="repo-card-modern parallax">
             <div class="card-content">
-                <!-- Animated Icon Container -->
-                <div class="icon-wrapper"></div>
+                <!-- Icon Container -->
+                <div class="icon-wrapper">
                     <i class="fab fa-github fa-4x pulse rainbow-text floating"></i>
                     <div class="icon-glow"></div>
                 </div>
 
-                <!-- Enhanced Title and Description -->
+                <!-- Title and Description -->
                 <h3 class="repo-title gradient-animated">
                     DSA Lab Repository
                     <span class="badge">Featured</span>
                 </h3>
                 <p class="repo-description typewriter">
-                    Comprehensive collection of Data Structures & Algorithms implementations
+                    A comprehensive collection of Data Structures & Algorithms implementations with complete documentation.
                 </p>
 
-                <!-- Enhanced Stats with Animations -->
+                <!-- Stats Section -->
                 <div class="repo-stats">
                     <div class="stat-item">
                         <i class="fas fa-code bounce"></i>
@@ -365,37 +365,267 @@
                     </div>
                     <div class="stat-item">
                         <i class="fas fa-book-open pulse"></i>
-                        <span class="stat-text">Documented</span>
+                        <span class="stat-text">Full Documentation</span>
                     </div>
                 </div>
 
-                <!-- Interactive Button -->
-                <div class="button-wrapper">
+                <!-- Action Button -->
+                <div class="button-container"></div>
                     <a href="https://github.com/UmeshCode1/DSA_LAB_COLLEGE" 
-                       target="_blank" 
-                       class="modern-button">
+                       class="glow-button" 
+                       target="_blank">
                         <span class="button-content">
                             <i class="fab fa-github"></i>
-                            <span>View Repository</span>
+                            View Repository
                         </span>
-                        <span class="button-glow"></span>
+                        <div class="button-glow"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Related Projects Grid -->
+    <div class="related-projects glassmorphic">
+        <h3 class="section-title gradient-animate">Explore More Projects</h3>
+        <div class="project-grid"></div>
+            <!-- OOPS Lab Card -->
+            <div class="project-card tilt-effect">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-code card-icon pulse"></i>
+                    </div>
+                    <h4 class="card-title">OOPS Lab</h4>
+                </div>
+                <div class="card-content">
+                    <p class="card-description">Object-Oriented Programming implementations with complete documentation and examples.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Java Programming</li>
+                        <li><i class="fas fa-check"></i> OOP Concepts</li>
+                        <li><i class="fas fa-check"></i> Design Patterns</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">OOP</span>
+                        <span class="tech-badge">DSA</span>
+                    </div>
+                    <a href="https://umeshcode1.github.io/OOPS_LAB_SEM3/" 
+                       class="card-button" 
+                       target="_blank">
+                        <span>Explore Project</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
 
-            <!-- Enhanced Visual Effects -->
-            <div class="card-effects">
-                <div class="particle-container"></div>
-                <div class="glow-effect"></div>
-                <div class="corner-accents"></div>
+            <!-- Python Lab Card -->
+            <div class="project-card tilt-effect">
+                <div class="card-header">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-python card-icon bounce"></i>
+                    </div>
+                    <h4 class="card-title">Python Lab</h4>
+                </div>
+                <div class="card-content">
+                    <p class="card-description">Comprehensive Python programming with advanced concepts and practical examples.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Data Science</li>
+                        <li><i class="fas fa-check"></i> Machine Learning</li>
+                        <li><i class="fas fa-check"></i> Web Scraping</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">ML</span>
+                        <span class="tech-badge">AI</span>
+                    </div>
+                    <a href="https://umeshcode1.github.io/PYTHON_LAB_3sem/" 
+                       class="card-button" 
+                       target="_blank">
+                        <span>Explore Project</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
+
+        <style>
+        .related-projects {
+            padding: 3rem;
+            margin: 4rem auto;
+            max-width: 1200px;
+        }
+
+        .glassmorphic {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+        }
+
+        .gradient-animate {
+            background: linear-gradient(-45deg, #4CAF50, #2196F3, #4CAF50);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradient 3s ease infinite;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-icon {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin: 1rem 0;
+        }
+
+        .card-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .tech-badge {
+            background: rgba(76, 175, 80, 0.1);
+            color: #4CAF50;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .card-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .card-button:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 768px) {
+            .related-projects {
+                padding: 1.5rem;
+            }
+
+            .gradient-animate {
+                font-size: 2rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        </style>
     </div>
 
     <style>
-    .repo-container {
-        padding: 2rem;
-        perspective: 1000px;
+    .repository-section {
+        padding: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .animated-title {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        background: linear-gradient(45deg, #4CAF50, #2196F3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: float 3s ease-in-out infinite;
     }
 
     .repo-card-modern {
@@ -403,96 +633,48 @@
         backdrop-filter: blur(10px);
         border-radius: 20px;
         padding: 2.5rem;
-        position: relative;
-        transform-style: preserve-3d;
-        transition: transform 0.6s ease;
-        box-shadow: 
-            0 10px 30px rgba(0, 0, 0, 0.1),
-            0 1px 8px rgba(0, 0, 0, 0.2);
+        margin: 2rem 0;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
     .repo-card-modern:hover {
-        transform: translateY(-10px) rotateX(5deg);
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.2);
     }
 
     .icon-wrapper {
-        position: relative;
-        margin-bottom: 1.5rem;
-    }
-
-    .icon-glow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(circle, rgba(76, 175, 80, 0.2) 0%, transparent 70%);
-        animation: pulse 2s infinite;
-    }
-
-    .repo-title {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
-        position: relative;
-        display: inline-flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .badge {
-        background: linear-gradient(45deg, #4CAF50, #45a049);
-        color: white;
-        padding: 0.3rem 0.8rem;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        transform: translateY(-2px);
-    }
-
-    .repo-description {
-        font-size: 1.1rem;
-        color: #666;
+        text-align: center;
         margin-bottom: 2rem;
-        line-height: 1.6;
     }
 
     .repo-stats {
-        display: flex;
-        gap: 2rem;
-        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
     }
 
     .stat-item {
         display: flex;
         align-items: center;
-        gap: 0.5rem;
-        font-size: 1.1rem;
+        gap: 0.8rem;
+        padding: 1rem;
+        background: rgba(255,255,255,0.1);
+        border-radius: 12px;
     }
 
-    .modern-button {
-        position: relative;
-        background: linear-gradient(45deg, #4CAF50, #45a049);
-        border: none;
-        padding: 1rem 2rem;
-        color: white;
-        border-radius: 30px;
-        font-size: 1.1rem;
-        text-decoration: none;
+    .glow-button {
         display: inline-flex;
         align-items: center;
         gap: 0.8rem;
-        overflow: hidden;
-        transition: all 0.3s ease;
-    }
-
-    .modern-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
-    }
-
-    .button-content {
+        padding: 1rem 2rem;
+        background: linear-gradient(45deg, #4CAF50, #45a049);
+        color: rgb(241, 241, 241);
+        border-radius: 30px;
+        text-decoration: none;
         position: relative;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
+        overflow: hidden;
     }
 
     .button-glow {
@@ -504,82 +686,48 @@
         animation: shine 3s infinite;
     }
 
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .project-card {
+        background: rgba(255,255,255,0.05);
+        border-radius: 15px;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+
     @keyframes shine {
-        to {
-            transform: translateX(100%);
-        }
+        to { transform: translateX(100%); }
     }
 
-    @keyframes pulse {
-        0% { transform: scale(1); opacity: 0.6; }
-        50% { transform: scale(1.1); opacity: 0.8; }
-        100% { transform: scale(1); opacity: 0.6; }
-    }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
-        .repo-card-modern {
+        .repository-section {
             padding: 1.5rem;
         }
 
-        .repo-title {
-            font-size: 1.8rem;
+        .animated-title {
+            font-size: 2rem;
         }
 
         .repo-stats {
-            flex-direction: column;
-            gap: 1rem;
+            grid-template-columns: 1fr;
         }
     }
     </style>
-
-    <!-- Related Repositories Section -->
-    <div class="related-repos-section">
-        <h3 class="section-title gradient-text">Other Lab Collections</h3>
-        <div class="repo-grid">
-            <!-- OOPS Lab Card -->
-            <div class="repo-card tilt-effect" data-repo="oops">
-                <div class="card-header">
-                    <i class="fas fa-code ca</div>rd-icon rotating"></i>
-                    <h4>OOPS Lab</h4>
-                </div>
-                <div class="card-body">
-                    <p>Object-Oriented Programming concepts and implementations</p>
-                    <ul class="repo-features">
-                        <li><i class="fas fa-check"></i> Classes & Objects</li>
-                        <li><i class="fas fa-check"></i> Inheritance</li>
-                        <li><i class="fas fa-check"></i> Polymorphism</li>
-                    </ul>
-                </div>
-                <a href="https://umeshcode1.github.io/OOPS_LAB_SEM3/" 
-                   target="_blank" 
-                   class="card-button">
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-
-            <!-- Python Lab Card -->
-            <div class="repo-card tilt-effect" data-repo="python">
-                <div class="card-header">
-                    <i class="fab fa-python card-icon bounce"></i>
-                    <h4>Python Lab</h4>
-                </div>
-                <div class="card-body">
-                    <p>Python programming fundamentals and advanced concepts</p>
-                    <ul class="repo-features"></ul>
-                        <li><i class="fas fa-check"></i> Basic Python</li>
-                        <li><i class="fas fa-check"></i> Data Structures</li>
-                        <li><i class="fas fa-check"></i> File Handling</li>
-            </div>        </ul>
-                </div>
-                <a href="https://umeshcode1.github.io/PYTHON_LAB_3sem/" 
-                   target="_blank" 
-                   class="card-button"></a>
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
 </div>
 
 <style>
