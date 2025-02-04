@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCT SEM 3 DSA LAB PROGRAMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0;
+            color: #ddd;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table Styles */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Card Styles */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .program-preview {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .program {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            border-radius: 12px;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 30%;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .program:hover {
+            background: linear-gradient(135deg, #45a049, #4CAF50);
+            transform: translateY(-5px) rotateX(10deg) rotateY(10deg);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 80%;
+            max-width: 800px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #fff;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-icons a {
+            color: #4CAF50;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .slide-in {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Typing Effect */
+        .typing {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+
+        /* 3D Effects */
+        .program-3d {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .program-3d:hover {
+            transform: rotateY(10deg) rotateX(10deg);
+        }
+
+        /* Other Repositories Section */
+        .other-repos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .repo-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-10px) rotateX(10deg) rotateY(10deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .repo-card i {
+            font-size: 48px;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .repo-card h3 {
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .repo-card p {
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .program, .repo-card {
+                width: 45%;
+            }
+
+            table, .card {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .program, .repo-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fade-in">Data Structures and Algorithms (DSA) Lab Programs - Semester 3</h1>
+    <h2 class="typing slide-in">👋 Hello, I’m Umesh Patel!</h2>
+    <p>This repository showcases a collection of Data Structures and Algorithms (DSA) lab programs, implemented during my 3rd semester at Oriental College of Technology, Bhopal.</p>
+
+    <hr>
+
+    <!-- Department Details -->
+    <div class="department fade-in">
+        <h2 class="highlight">AL-303: Data Structures and Algorithms</h2>
+        <p><strong>Academic Year:</strong> 2024-25</p>
+        <p><strong>Department:</strong> CSE-AIML</p>
+        <p><strong>Student Name:</strong> UMESH PATEL</p>
+        <p><strong>Enrollment Number:</strong> <span class="important">0126AL231140</span></p>
+        <p><strong>Class:</strong> AIML 3rd "B"</p>
+    </div>
+
+    <hr>
+
+    <h2 class="slide-in">List of Programs</h2>
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Program Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Program to input marks of 5 subjects and print the total and percentage using arrays.</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Program to find the highest and lowest element in an array.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Program to read two 3×3 matrices and add them.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Program to create a linked list and implement insertion and deletion operations on it.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Program to generate the Fibonacci series using recursion.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Program to create a stack and implement "Push" and "Pop" operations on it.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Program to create a queue and implement insertion and deletion operations on it.</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Program to create a circular queue and implement insertion and deletion operations on it.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Program to traverse a binary tree in:<br>a. Pre-order<br>b. In-order<br>c. Post-order</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Program to implement binary search.</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Program to implement sorting of data using:<br>a. Bubble Sort<br>b. Selection Sort<br>c. Insertion Sort</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Program to implement a graph and traverse it using:<br>Breadth First Search (BFS)<br>Depth First Search (DFS)</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <div class="card fade-in">
+        <h2>Repository Programs</h2>
+        <div class="program-preview">
+            <div class="program program-3d" onclick="showModal('Program_1/program1.cpp', 'Program_1/output1.png')">Program 1 - Input Marks</div>
+            <div class="program program-3d" onclick="showModal('Program_2/Program2.cpp', 'Program_2/output2.png')">Program 2 - Highest and Lowest Element</div>
+            <div class="program program-3d" onclick="showModal('Program_3/Program3.cpp', 'Program_3/output3.png')">Program 3 - Matrix Addition</div>
+            <div class="program program-3d" onclick="showModal('Program_4/Program4.cpp', 'Program_4/output4.png')">Program 4 - Linked List Operations</div>
+            <div class="program program-3d" onclick="showModal('Program_5/Program5.cpp', 'Program_5/output5.png')">Program 5 - Fibonacci Series</div>
+            <div class="program program-3d" onclick="showModal('Program_6/Program6.cpp', 'Program_6/output6.png')">Program 6 - Stack Operations</div>
+            <div class="program program-3d" onclick="showModal('Program_7/Program7.cpp', 'Program_7/output7.png')">Program 7 - Queue Operations</div>
+            <div class="program program-3d" onclick="showModal('Program_8/Program8.cpp', 'Program_8/output8.png')">Program 8 - Circular Queue</div>
+            <div class="program program-3d" onclick="showModal('Program_9/Program9.cpp', 'Program_9/output9.png')">Program 9 - Binary Tree Traversal</div>
+            <div class="program program-3d" onclick="showModal('Program_10/Program10.cpp', 'Program_10/output10.png')">Program 10 - Binary Search</div>
+            <div class="program program-3d" onclick="showModal('Program_11/Program11.cpp', 'Program_11/output11.png')">Program 11 - Sorting</div>
+            <div class="program program-3d" onclick="showModal('Program_12/Program12.cpp', 'Program_12/output12.png')">Program 12 - Graph Traversal</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Other Repositories Section -->
+    <h2 class="slide-in">Explore My Other Repositories</h2>
+    <div class="other-repos">
+        <div class="repo-card float" onclick="window.open('https://github.com/UmeshCode1/OOPS_LAB_SEM3', '_blank')">
+            <i class="fas fa-code"></i>
+            <h3>OOPS Lab</h3>
+            <p>Object-Oriented Programming Laboratory works and implementations</p>
+        </div>
+        <div class="repo-card float" onclick="window.open('https://github.com/UmeshCode1/PYTHON_LAB_3sem', '_blank')">
+            <i class="fab fa-python"></i>
+            <h3>Python Lab</h3>
+            <p>Python Programming Laboratory experiments and projects</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="slide-in">How to Use</h2>
+    <ol>
+        <li>Clone the repository:
+            <pre><code>git clone https://github.com/UmeshCode1/DSA_LAB_COLLEGE.git</code></pre>
+        </li>
+    </ol>
+
+    <h2 class="slide-in">Connect with Me</h2>
+    <div class="social-icons fade-in">
+        <a href="https://github.com/UmeshCode1" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/umesh-patel-5647b42a4/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:umesh.code1@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <div class="thank-you fade-in">
+        <p class="typing">Thank you for visiting this repository!</p>
+        <h2 class="thank-you-animation">🎉 Thank You! 🎉</h2>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <pre id="programCode"></pre>
+            <img id="outputImage" src="" alt="Output Image">
+        </div>
+    </div>
+
+    <script>
+        function showModal(programPath, outputImagePath) {
+            document.getElementById('programCode').textContent = 'Loading...';
+            fetch(programPath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('programCode').textContent = data;
+                });
+            document.getElementById('outputImage').src = outputImagePath;
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('myModal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
