@@ -330,18 +330,252 @@
 
     <hr>
 
-<!-- Repository Section -->
-<div class="repository-section fade-in-bottom">
-    <h2 class="animated-title glow">Explore the Repository</h2>
+<!-- Modern Repository Section -->
+<div class="repository-section glassmorphism">
+    <h2 class="animated-title neon-glow floating">📚 Explore My Programming Journey</h2>
+    
+    <!-- Main Repository Card with Enhanced Design -->
     <div class="repo-container">
-        <div class="repo-card-modern">
-            <i class="fab fa-github fa-4x pulse rainbow"></i>
-            <h3 class="sliding-text highlight-text">View on GitHub</h3>
-            <p class="fade-in typewriter">Access the complete source code and documentation</p>
-            <div class="highlight-container"></div>
-                <a href="https://github.com/UmeshCode1/DSA_LAB_COLLEGE" target="_blank" class="modern-button floating">
-                    <span class="button-text">Open Repository</span>
-                    <i class="fas fa-arrow-right bounce-arrow"></i>
+        <div class="repo-card-modern parallax">
+            <div class="card-content">
+                <!-- Animated Icon Container -->
+                <div class="icon-wrapper"></div>
+                    <i class="fab fa-github fa-4x pulse rainbow-text floating"></i>
+                    <div class="icon-glow"></div>
+                </div>
+
+                <!-- Enhanced Title and Description -->
+                <h3 class="repo-title gradient-animated">
+                    DSA Lab Repository
+                    <span class="badge">Featured</span>
+                </h3>
+                <p class="repo-description typewriter">
+                    Comprehensive collection of Data Structures & Algorithms implementations
+                </p>
+
+                <!-- Enhanced Stats with Animations -->
+                <div class="repo-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-code bounce"></i>
+                        <span class="stat-text">12 Programs</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star sparkle"></i>
+                        <span class="stat-text">C++ Based</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-book-open pulse"></i>
+                        <span class="stat-text">Documented</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Button -->
+                <div class="button-wrapper">
+                    <a href="https://github.com/UmeshCode1/DSA_LAB_COLLEGE" 
+                       target="_blank" 
+                       class="modern-button">
+                        <span class="button-content">
+                            <i class="fab fa-github"></i>
+                            <span>View Repository</span>
+                        </span>
+                        <span class="button-glow"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Enhanced Visual Effects -->
+            <div class="card-effects">
+                <div class="particle-container"></div>
+                <div class="glow-effect"></div>
+                <div class="corner-accents"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .repo-container {
+        padding: 2rem;
+        perspective: 1000px;
+    }
+
+    .repo-card-modern {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 2.5rem;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease;
+        box-shadow: 
+            0 10px 30px rgba(0, 0, 0, 0.1),
+            0 1px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .repo-card-modern:hover {
+        transform: translateY(-10px) rotateX(5deg);
+    }
+
+    .icon-wrapper {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+
+    .icon-glow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(76, 175, 80, 0.2) 0%, transparent 70%);
+        animation: pulse 2s infinite;
+    }
+
+    .repo-title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .badge {
+        background: linear-gradient(45deg, #4CAF50, #45a049);
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        transform: translateY(-2px);
+    }
+
+    .repo-description {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    .repo-stats {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .modern-button {
+        position: relative;
+        background: linear-gradient(45deg, #4CAF50, #45a049);
+        border: none;
+        padding: 1rem 2rem;
+        color: white;
+        border-radius: 30px;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.8rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .modern-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+    }
+
+    .button-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .button-glow {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transform: translateX(-100%);
+        animation: shine 3s infinite;
+    }
+
+    @keyframes shine {
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 0.6; }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .repo-card-modern {
+            padding: 1.5rem;
+        }
+
+        .repo-title {
+            font-size: 1.8rem;
+        }
+
+        .repo-stats {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+    </style>
+
+    <!-- Related Repositories Section -->
+    <div class="related-repos-section">
+        <h3 class="section-title gradient-text">Other Lab Collections</h3>
+        <div class="repo-grid">
+            <!-- OOPS Lab Card -->
+            <div class="repo-card tilt-effect" data-repo="oops">
+                <div class="card-header">
+                    <i class="fas fa-code ca</div>rd-icon rotating"></i>
+                    <h4>OOPS Lab</h4>
+                </div>
+                <div class="card-body">
+                    <p>Object-Oriented Programming concepts and implementations</p>
+                    <ul class="repo-features">
+                        <li><i class="fas fa-check"></i> Classes & Objects</li>
+                        <li><i class="fas fa-check"></i> Inheritance</li>
+                        <li><i class="fas fa-check"></i> Polymorphism</li>
+                    </ul>
+                </div>
+                <a href="https://umeshcode1.github.io/OOPS_LAB_SEM3/" 
+                   target="_blank" 
+                   class="card-button">
+                    Explore <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Python Lab Card -->
+            <div class="repo-card tilt-effect" data-repo="python">
+                <div class="card-header">
+                    <i class="fab fa-python card-icon bounce"></i>
+                    <h4>Python Lab</h4>
+                </div>
+                <div class="card-body">
+                    <p>Python programming fundamentals and advanced concepts</p>
+                    <ul class="repo-features"></ul>
+                        <li><i class="fas fa-check"></i> Basic Python</li>
+                        <li><i class="fas fa-check"></i> Data Structures</li>
+                        <li><i class="fas fa-check"></i> File Handling</li>
+            </div>        </ul>
+                </div>
+                <a href="https://umeshcode1.github.io/PYTHON_LAB_3sem/" 
+                   target="_blank" 
+                   class="card-button"></a>
+                    Explore <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -349,254 +583,156 @@
 </div>
 
 <style>
+/* Base Styles */
 .repository-section {
-    padding: 40px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    padding: 3rem;
+    margin: 4rem auto;
+    max-width: 1200px;
 }
 
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 8px 32px rgba(31, 38, 135, 0.15),
+        0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
 .animated-title {
-    position: relative;
-    color: #4CAF50;
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    animation: slideIn 1s ease-out;
-}
-
-.glow {
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-.rainbow {
-    animation: rainbow 5s linear infinite;
-}
-
-.highlight-text {
-    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: colorChange 5s infinite;
-}
-
-.typewriter {
-    overflow: hidden;
-    border-right: 2px solid #4CAF50;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-.highlight-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-    margin-top: 20px;
-}
-
-.highlight-container::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: conic-gradient(
-        #4CAF50,
-        #45a049,
-        #4CAF50
-    );
-    animation: rotate 4s linear infinite;
-    z-index: -1;
-}
-
-.floating {
-    animation: floating 3s ease-in-out infinite;
-}
-
-.bounce-arrow {
-    animation: bounceRight 1.5s infinite;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #4CAF50, 0 0 15px #4CAF50;
-    }
-    to {
-        text-shadow: 0 0 10px #fff, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
-    }
-}
-
-@keyframes rainbow {
-    0% { color: #4CAF50; }
-    25% { color: #2196F3; }
-    50% { color: #9C27B0; }
-    75% { color: #F44336; }
-    100% { color: #4CAF50; }
-}
-
-@keyframes colorChange {
-    0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(360deg); }
-}
-
-@keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-@keyframes floating {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-
-@keyframes bounceRight {
-    0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
-    40% { transform: translateX(5px); }
-    60% { transform: translateX(3px); }
-}
-
-/* Keep existing styles and add these new ones */
-.repo-card-modern {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transform-style: preserve-3d;
-    perspective: 1000px;
-}
-
-.repo-card-modern:hover {
-    transform: translateY(-10px) rotateX(5deg);
-}
-
-.modern-button {
-    background: linear-gradient(45deg, #4CAF50, #45a049);
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-}
-
-.modern-button:hover {
-    background: linear-gradient(45deg, #45a049, #4CAF50);
-    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
-    transform: translateY(-2px);
-}
-
-/* Keep all other existing styles */
-</style>
-
-<!-- Other Repositories Section -->
-<div class="other-repos-section fade-in-bottom">
-    <h2>Explore My Other Lab Repositories</h2>
-    <div class="repo-cards">
-        <div class="repo-card" onclick="window.open('https://umeshcode1.github.io/OOPS_LAB_SEM3/', '_blank')">
-            <i class="fas fa-code fa-3x"></i>
-            <h3>OOPS Lab</h3>
-            <p>Object-Oriented Programming Laboratory works and implementations</p>
-            <div class="repo-hover">
-                <span>Click to Visit</span>
-                <i class="fas fa-arrow-right"></i>
-            </div>
-        </div>
-        <div class="repo-card" onclick="window.open('https://umeshcode1.github.io/PYTHON_LAB_3sem/', '_blank')">
-            <i class="fab fa-python fa-3x"></i>
-            <h3>Python Lab</h3>
-            <p>Python Programming Laboratory experiments and projects</p>
-            <div class="repo-hover">
-                <span>Click to Visit</span>
-                <i class="fas fa-arrow-right"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-.other-repos-section {
-    padding: 40px 20px;
+    font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(45deg, #4CAF50, #2196F3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
-.repo-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+/* Repository Cards */
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .repo-card {
-    background: linear-gradient(145deg, #ffffff, #f0f0f0);
-    border-radius: 15px;
-    padding: 25px;
-    width: 300px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.repo-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(76, 175, 80, 0.2);
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.repo-card i {
-    color: #4CAF50;
-    margin-bottom: 15px;
+.repo-features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
 }
 
-.repo-card h3 {
-    color: #333;
-    margin: 10px 0;
+.repo-features li {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.repo-card p {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 15px;
-}
-
-.repo-hover {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    right: 0;
-    background: rgba(76, 175, 80, 0.9);
+.card-button {
+    margin-top: auto;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
     color: white;
-    padding: 10px;
-    transition: bottom 0.3s ease;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
 }
 
-.repo-card:hover .repo-hover {
-    bottom: 0;
+.card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
 }
 
-.repo-hover i {
-    color: white;
-    margin-left: 8px;
-    font-size: 1em;
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .repo-cards {
-        flex-direction: column;
-        align-items: center;
+    .repository-section {
+        padding: 1.5rem;
+        margin: 2rem 1rem;
     }
-    
-    .repo-card {
-        width: 80%;
-        margin-bottom: 20px;
+
+    .animated-title {
+        font-size: 2re</div>m;
+    }
+
+    .repo-grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
-<!-- Usage Guide Section -->
+
+<script>
+// Initialize tilt effect
+document.querySelectorAll('.tilt-effect').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 20;
+        const rotateY = -(x - centerX) / 20;
+        
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+    });
+});
+
+// Create particle effect
+function createParticles() {
+    const containers = document.querySelectorAll('.particle-container');
+    containers.forEach(container => {
+        for (let i = 0; i < 15; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 2 + 's';
+            container.appendChild(particle);
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', createParticles);
+</script>
 <div class="usage-section glassmorphism">
     <h2 class="section-title gradient-text animate-gradient">Quick Start Guide</h2>
     <div class="installation-steps">
