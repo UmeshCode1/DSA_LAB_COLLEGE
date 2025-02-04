@@ -1058,30 +1058,7 @@ document.addEventListener('DOMContentLoaded', createParticles);
     box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
 }
 
-.
-@media (max-width: 768px) {
-    .usage-section {
-        padding: 2rem;
-        margin: 1rem;
-    }
-    
-    .installation-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.5rem;
-    }
-    
-    .command-box {
-        font-size: 0.9rem;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1.2rem;
-    }
-    
-    .gradient-text {
-        font-size: 2rem;
-    }
-}
+
 </style>
 
 <script>
@@ -1096,67 +1073,213 @@ function copyToClipboard(text) {
 }
 </script>
 
-<div class="thank-you animated">
-    
-    <p class="typing-effect">Thank you for visiting this repository!</p>
-    <h2 class="thank-you-animation">🎉 Thank You! 🎉</h2>
-</div>
-
 <style>
-    .animated {
-        animation: fadeIn 2s ease-in-out, bounce 2s infinite;
+/* Base Styles */
+.gradient-title{background:linear-gradient(-45deg,#4CAF50,#2196F3);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:2rem}
+.quote{display:none;color:#fff;margin:1rem 0}.quote.active{display:block}
+.cta-button{display:inline-flex;padding:.8rem 1.5rem;background:#4CAF50;color:#fff;text-decoration:none;border-radius:25px;margin-top:1rem}
+</style>
+<script>
+const q=document.querySelectorAll('.quote');let c=0;setInterval(()=>{q.forEach(e=>e.classList.remove('active'));q[c=(c+1)%q.length].classList.add('active')},5000);
+</script>
+<div class="thank-you-card">
+    <div class="card-content">
+        <h2 class="thank-you-title">Thank You for Visiting!</h2>
+        <p class="message">I appreciate your interest in my DSA Lab Programs collection.</p>
+        <div class="social-links">
+            <a href="https://github.com/UmeshCode1" class="social-btn">
+                <i class="fab fa-github"></i>
+                Follow on GitHub
+            </a>
+            <a href="mailto:umesh.code1@gmail.com" class="social-btn">
+                <i class="fas fa-envelope"></i>
+                Contact Me
+            </a>
+        </div>
+    </div>
+    <div class="motivation-box">
+        <div class="quote-container">
+            <p class="quote active">Code is like humor. When you have to explain it, it's bad.</p>
+            <p class="quote">First, solve the problem. Then, write the code.</p>
+            <p class="quote">Clean code always looks like it was written by someone who cares.</p>
+            <p class="quote">The best error message is the one that never shows up.</p>
+            <p class="quote">Programming is the art of telling another human what one wants the computer to do.</p>
+            <p class="quote">Every great developer you know got there by solving problems they were unqualified to solve.</p>
+        </div>
+        <div class="cta-wrapper">
+            <a href="https://github.com/UmeshCode1" class="cta-button">
+            <span class="cta-text">Let's Code Together!</span>
+            <i class="fas fa-code"></i>
+            <div class="button-glow"></div>
+            </a>
+        </div>
+    </div>
+
+    <style>
+    .motivation-box {
+        text-align: center;
+        padding: 2rem;
+        margin-top: 2rem;
+        background: rgba(76, 175, 80, 0.05);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
     }
 
-    @keyframes fadeIn {
+    .quote-container {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .quote {
+        display: none;
+        font-size: 1.2rem;
+        color: #2c5282;
+        font-style: italic;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .quote.active {
+        display: block;
+        animation: slideInFade 0.8s ease-out;
+    }
+
+    .cta-wrapper {
+        position: relative;
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+        background: linear-gradient(45deg, #4CAF50, #45a049);
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+    }
+
+    .button-glow {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transform: translateX(-100%);
+        animation: glow 3s infinite;
+    }
+
+    @keyframes slideInFade {
         from {
             opacity: 0;
+            transform: translateY(20px);
         }
         to {
             opacity: 1;
-        }
-    }
-
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
             transform: translateY(0);
         }
-        40% {
-            transform: translateY(-30px);
-        }
-        60% {
-            transform: translateY(-15px);
+    }
+
+    @keyframes glow {
+        to {
+            transform: translateX(100%);
         }
     }
-</style>
+    </style>
 
-<p class="typing highlight bold"><em>"Learning never stops, and neither does coding."</em> 😊</p>
+    <script>
+    const quotes = document.querySelectorAll('.quote');
+    let currentQuote = 0;
+
+    function rotateQuotes() {
+        quotes.forEach(quote => quote.classList.remove('active'));
+        quotes[currentQuote].classList.add('active');
+        currentQuote = (currentQuote + 1) % quotes.length;
+    }
+
+    setInterval(rotateQuotes, 4000);
+    rotateQuotes(); // Initial display
+    </script>
+</div>
 
 <style>
-    .highlight {
-        background-color: #ffeb3b;
-        border-radius: 5px;
-        padding: 10px;
+.thank-you-card {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(33, 150, 243, 0.1));
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.thank-you-title {
+    color: #4CAF50;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.message {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    .bold {
-        font-weight: bold;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-    .typing {
-        overflow: hidden;
-        border-right: .15em solid orange;
-        white-space: nowrap;
-        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-    }
-    @keyframes typing {
-        from { width: 0; }
-        to { width: 100%; }
-    }
-    @keyframes blink-caret {
-        from, to { border-color: transparent; }
-        50% { border-color: orange; }
-    }
+}
 </style>
-
-
 
     <!-- Modal structure -->
     <div id="myModal" class="modal">
