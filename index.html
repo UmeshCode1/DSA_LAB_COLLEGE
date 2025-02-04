@@ -251,70 +251,415 @@
     </div>
 
     <hr>
+    <!-- Repository Overview Section -->
+    <div class="heading-section">
+        <h2 class="section-heading animated-gradient">Lab Programs Repository Overview</h2>
+        <div class="heading-description">
+            <p>A comprehensive collection of DSA implementations with detailed explanations and examples.</p>
+            <div class="heading-badges">
+                <span class="badge"><i class="fas fa-code"></i> 12 Programs</span>
+                <span class="badge"><i class="fas fa-book"></i> Documentation</span>
+                <span class="badge"><i class="fas fa-laptop-code"></i> Practice Examples</span>
+            </div>
+        </div>
+    </div>
 
-    <h2>List of Programs</h2>
-    <table>
-        <tr>
-            <th>S.No</th>
-            <th>Program Description</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Program to input marks of 5 subjects and print the total and percentage using arrays.</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Program to find the highest and lowest element in an array.</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Program to read two 3×3 matrices and add them.</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Program to create a linked list and implement insertion and deletion operations on it.</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Program to generate the Fibonacci series using recursion.</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Program to create a stack and implement "Push" and "Pop" operations on it.</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>Program to create a queue and implement insertion and deletion operations on it.</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>Program to create a circular queue and implement insertion and deletion operations on it.</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>Program to traverse a binary tree in:<br>a. Pre-order<br>b. In-order<br>c. Post-order</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>Program to implement binary search.</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td>Program to implement sorting of data using:<br>a. Bubble Sort<br>b. Selection Sort<br>c. Insertion Sort</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td>Program to implement a graph and traverse it using:<br>Breadth First Search (BFS)<br>Depth First Search (DFS)</td>
-        </tr>
-    </table>
+    <style>
+    .heading-section {
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem auto;
+    }
 
-    <hr>
+    .section-heading {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(-45deg, #4CAF50, #2196F3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: gradient 3s ease infinite;
+    }
+
+    .heading-description {
+        color: #666;
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .heading-badges {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: rgba(76, 175, 80, 0.1);
+        color: #4CAF50;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    </style>
+    <div class="programs-section">
+        <table class="modern-table">
+            <thead>
+                <tr class="header-row">
+                    <th class="program-header">
+                        <div class="header-content">
+                            <i class="fas fa-code"></i>
+                            <span>Program</span>
+                        </div>
+                    </th>
+                    <th class="details-header">
+                        <div class="header-content">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Implementation Details</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="program-row">
+                    <td class="program-number"><span class="number">01</span></td>
+                    <td class="program-details">
+                        <div class="details-content">
+                            <h3>Array Operations - Input & Calculate</h3>
+                            <p>• Input marks of 5 subjects and calculate total & percentage</p>
+                            <div class="tech-tags">
+                                <span class="tag">Arrays</span>
+                                <span class="tag">Arithmetic</span>
+                                <span class="tag">Input/Output</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="program-row">
+                    <td class="program-number"><span class="number">02</span></td>
+                    <td class="program-details">
+                        <div class="details-content">
+                            <h3>Array Analysis - Element Finding</h3>
+                            <p>• Advanced implementation to find highest and lowest elements</p>
+                            <div class="tech-tags">
+                                <span class="tag">Array Traversal</span>
+                                <span class="tag">Comparison</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Similar structure for other programs -->
+                <tr class="program-row">
+                    <td class="program-number"><span class="number">03</span></td>
+                    <td class="program-details">
+                        <div class="details-content">
+                            <h3>Matrix Operations & Manipulations</h3>
+                            <p>• Implementation of matrix addition and advanced operations</p>
+                            <div class="tech-tags"></div>
+                                <span class="tag">2D Arrays</span>
+                                <span class="tag">Matrix Math</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add more rows following the same pattern -->
+            <tr class="program-row">
+                <td class="program-number"><span class="number">04</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Linked List Implementation</h3>
+                    <p>• Complete implementation of Singly Linked List operations including insertion, deletion, and traversal</p>
+                    <div class="tech-tags">
+                        <span class="tag">Linked Lists</span>
+                        <span class="tag">Dynamic Memory</span>
+                        <span class="tag">Pointers</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">05</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Fibonacci Series Generation</h3>
+                    <p>• Implementation of Fibonacci series using both iterative and recursive approaches</p>
+                    <div class="tech-tags">
+                        <span class="tag">Recursion</span>
+                        <span class="tag">Iteration</span>
+                        <span class="tag">Math</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">06</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Stack Operations</h3>
+                    <p>• Implementation of stack operations: push, pop, peek, and display</p>
+                    <div class="tech-tags">
+                        <span class="tag">Stack</span>
+                        <span class="tag">LIFO</span>
+                        <span class="tag">ADT</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">07</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Queue Implementation</h3>
+                    <p>• Queue operations including enqueue, dequeue, and display</p>
+                    <div class="tech-tags">
+                        <span class="tag">Queue</span>
+                        <span class="tag">FIFO</span>
+                        <span class="tag">Data Structure</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">08</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Circular Queue Operations</h3>
+                    <p>• Implementation of circular queue with all basic operations</p>
+                    <div class="tech-tags">
+                        <span class="tag">Circular Queue</span>
+                        <span class="tag">Array</span>
+                        <span class="tag">Memory Efficiency</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">09</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Binary Tree Traversals</h3>
+                    <p>• Implementation of inorder, preorder, and postorder traversals</p>
+                    <div class="tech-tags">
+                        <span class="tag">Binary Tree</span>
+                        <span class="tag">Recursion</span>
+                        <span class="tag">Traversal</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">10</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Binary Search Algorithm</h3>
+                    <p>• Implementation of binary search with sorted array</p>
+                    <div class="tech-tags">
+                        <span class="tag">Searching</span>
+                        <span class="tag">Algorithm</span>
+                        <span class="tag">Divide & Conquer</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">11</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Sorting Algorithms</h3>
+                    <p>• Implementation of bubble, selection, and insertion sort</p>
+                    <div class="tech-tags">
+                        <span class="tag">Sorting</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Comparison</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+
+                <tr class="program-row">
+                <td class="program-number"><span class="number">12</span></td>
+                <td class="program-details">
+                    <div class="details-content">
+                    <h3>Graph Traversal Algorithms</h3>
+                    <p>• Implementation of BFS and DFS traversal techniques</p>
+                    <div class="tech-tags">
+                        <span class="tag">Graph</span>
+                        <span class="tag">BFS</span>
+                        <span class="tag">DFS</span>
+                    </div>
+                    </div>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <style>
+    .programs-section {
+        padding: 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+    }
+
+    .modern-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 15px;
+        background: transparent;
+    }
+
+    .modern-table thead th {
+        background: linear-gradient(145deg, #4CAF50, #45a049);
+        color: white;
+        padding: 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+    }
+
+    .program-row {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    .program-row:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
+    }
+
+    .program-number {
+        width: 80px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .number {
+        background: linear-gradient(145deg, #4CAF50, #45a049);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .program-details {
+        padding: 20px;
+    }
+
+    .details-content h3 {
+        color: #2c5282;
+        margin: 0 0 10px 0;
+        font-size: 1.3rem;
+    }
+
+    .details-content p {
+        color: #4a5568;
+        margin: 0 0 15px 0;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .tech-tags {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        background: rgba(76, 175, 80, 0.1);
+        color: #4CAF50;
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .tag:hover {
+        background: rgba(76, 175, 80, 0.2);
+        transform: translateY(-2px);
+    }
+
+    /* Animations */
+    .program-row {
+        animation: slideIn 0.5s ease-out forwards;
+        opacity: 0;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Stagger animation for rows */
+    .program-row:nth-child(1) { animation-delay: 0.1s; }
+    .program-row:nth-child(2) { animation-delay: 0.2s; }
+    .program-row:nth-child(3) { animation-delay: 0.3s; }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .programs-section {
+            padding: 1rem;
+        }
+
+        .modern-table thead th {
+            font-size: 1rem;
+            padding: 15px;
+        }
+
+        .number {
+            font-size: 1rem;
+            padding: 8px 12px;
+        }
+
+        .details-content h3 {
+            font-size: 1.1rem;
+        }
+
+        .details-content p {
+            font-size: 0.9rem;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+        }
+    }
+    </style>
+   
 
     <div class="card">
         <h2>Repository Programs</h2>
         <div class="program-preview">
             <div class="program" onclick="showModal('Program_1/program1.cpp', 'Program_1/output1.png')">Program 1 - Input Marks</div>
-            <div class="program" onclick="showModal('Program_2/Program2.cpp', 'Program_2/output2.png')">Program 2 - Highest and Lowest Element</div>
+            <div class="program" onclick="showModal(</div>'Program_2/Program2.cpp', 'Program_2/output2.png')">Program 2 - Highest and Lowest Element</div>
             <div class="program" onclick="showModal('Program_3/Program3.cpp', 'Program_3/output3.png')">Program 3 - Matrix Addition</div>
             <div class="program" onclick="showModal('Program_4/Program4.cpp', 'Program_4/output4.png')">Program 4 - Linked List Operations</div>
             <div class="program" onclick="showModal('Program_5/Program5.cpp', 'Program_5/output5.png')">Program 5 - Fibonacci Series</div>
