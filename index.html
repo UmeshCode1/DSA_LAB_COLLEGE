@@ -240,14 +240,223 @@
 
     <hr>
 
-    <!-- Department Details -->
-    <div class="department">
-        <h2 class="highlight">AL-303: Data Structures and Algorithms</h2>
-        <p><strong>Academic Year:</strong> 2024-25</p>
-        <p><strong>Department:</strong> CSE-AIML</p>
-        <p><strong>Student Name:</strong> UMESH PATEL</p>
-        <p><strong>Enrollment Number:</strong> <span class="important">0126AL231140</span></p>
-        <p><strong>Class:</strong> AIML 3rd "B"</p>
+    <div class="student-profile-card">
+        <!-- ID Card Section -->
+        <div class="id-card-container">
+            <div class="id-card">
+                <div class="card-header"></div>
+                    <div class="college-logo">OCT</div>
+                    <h2>Oriental College of Technology</h2>
+                    <p class="subtitle">Department of CSE-AIML</p>
+                </div>
+                
+                <div class="student-info">
+                    <div class="photo-section">
+                        <div class="photo-frame">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <span class="status-badge">Active Student</span>
+                    </div>
+
+                    <div class="info-details">
+                        <div class="detail-row">
+                            <i class="fas fa-user"></i>
+                            <span class="label">Name:</span>
+                            <span class="value">UMESH PATEL</span>
+                        </div>
+                        <div class="detail-row"></div>
+                            <i class="fas fa-id-card"></i>
+                            <span class="label">Enrollment:</span>
+                            <span class="value highlight">0126AL231140</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-code"></i>
+                            <span class="label">Course:</span>
+                            <span class="value">AL-303: Data Structures & Algorithms</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-users"></i>
+                            <span class="label">Class:</span>
+                            <span class="value">AIML 3rd Semester "B"</span>
+                        </div>
+                        <div class="detail-row">
+                            <i class="fas fa-calendar"></i>
+                            <span class="label">Academic Year:</span>
+                            <span class="value">2024-25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <div class="qr-section">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <div class="validity">Valid until: 2025</div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+        .student-profile-card {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+            border-radius: 20px;
+            box-shadow: 
+                0 10px 30px rgba(0,0,0,0.1),
+                0 1px 8px rgba(0,0,0,0.05);
+        }
+
+        .id-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .id-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .college-logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .photo-section {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .photo-frame {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .status-badge {
+            position: absolute;
+            bottom: -10px;
+            right: 50%;
+            transform: translateX(50%);
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-details {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .detail-row:hover {
+            transform: translateX(10px);
+            background: #f0f0f0;
+        }
+
+        .detail-row i {
+            color: #4CAF50;
+            font-size: 1.2rem;
+        }
+
+        .label {
+            font-weight: 600;
+            color: #666;
+            min-width: 100px;
+        }
+
+        .value {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .value.highlight {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        .card-footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 2px dashed #4CAF50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .qr-section {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        .validity {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .student-profile-card {
+                padding: 1rem;
+                margin: 1rem;
+            }
+
+            .id-card {
+                padding: 1rem;
+            }
+
+            .photo-frame {
+                width: 120px;
+                height: 120px;
+                font-size: 3rem;
+            }
+
+            .detail-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+        </style>
     </div>
 
     <hr>
@@ -545,8 +754,18 @@
     }
 
     .program-row:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 
+            0 12px 30px rgba(76, 175, 80, 0.25),
+            0 4px 8px rgba(61, 212, 66, 0.1);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        background: linear-gradient(
+            to right,
+            rgba(76, 175, 80, 0.05),
+            rgba(76, 175, 80, 0.1)
+        );
+        border-left: 4px solid #4CAF50;
     }
 
     .program-number {
@@ -598,8 +817,35 @@
     }
 
     .tag:hover {
-        background: rgba(76, 175, 80, 0.2);
-        transform: translateY(-2px);
+        background: linear-gradient(45deg, rgba(76, 175, 80, 0.3), rgba(33, 150, 243, 0.3));
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        color: #2c5282;
+        border-radius: 20px;
+    }
+
+    .tag {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tag::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transform: translateX(-100%);
+        transition: transform 0.6s;
+    }
+
+    .tag:hover::after {
+        transform: translateX(100%);
     }
 
     /* Animations */
@@ -651,6 +897,60 @@
         .tag {
             font-size: 0.8rem;
         }
+    }
+
+    /* Hover effects for various elements */
+    .section-title:hover {
+        transform: scale(1.05);
+        text-shadow: 0 0 15px rgba(76, 175, 80, 0.5);
+    }
+
+    .step-number:hover {
+        transform: rotate(360deg);
+        transition: transform 0.8s ease;
+    }
+
+    .command-box:hover {
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+    }
+
+    .gradient-text:hover {
+        background-size: 300% auto;
+        animation: gradient 2s linear infinite;
+    }
+
+    .installation-card:hover .step-number {
+        animation: pulse 1s infinite;
+    }
+
+    .usage-section:hover .gradient-text {
+        letter-spacing: 2px;
+        transition: letter-spacing 0.3s ease;
+    }
+
+    .modern-button:hover i {
+        transform: rotate(180deg);
+        transition: transform 0.5s ease;
+    }
+
+    .command-box:hover code {
+        color: #4CAF50;
+        transition: color 0.3s ease;
+    }
+
+    .step-number:hover + .command-box {
+        border-left: 4px solid #4CAF50;
+        transition: border-left 0.3s ease;
+    }
+
+    .installation-steps:hover .installation-card {
+        filter: brightness(0.95);
+    }
+
+    .installation-steps .installation-card:hover {
+        filter: brightness(1.05);
+        z-index: 1;
     }
     </style>
    
